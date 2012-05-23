@@ -7,5 +7,10 @@
         = stylesheet_link_tag "site.css"
         = yield_content :head
   %body{:class => page_classes}
-    #main{:role => "main"}
-      = yield
+    = partial "header" 
+    %section{:id => "main"}
+      .row
+        = yield
+    %footer
+      .row
+        = partial "footer" 

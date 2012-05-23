@@ -1,32 +1,69 @@
+  //////////////////////////////////////////////
+ //// IMPORTS /////////////////////////////////
+//////////////////////////////////////////////
+
 @import "compass";
 @import "cremalab-library";
 
-$link-color:         #0388a6;
-$link-hover-color:   #009ce0;
-$link-focus-color:   false;
-$link-active-color:  false;
-$link-visited-color: false;
 
-$font-color:  #2a2a2a;
-$font-family: sans-serif;
-$base-font-size:   12px;
-$base-line-height: 18px;
 
-$total-cols: 12;
-$col-width: 4em;
-$gutter-width: 1em;
-$side-gutter-width: $gutter-width;
 
-body {
+  //////////////////////////////////////////////
+ //// COLORS //////////////////////////////////
+//////////////////////////////////////////////
+
+$color-1: #EE3F35; //Red
+$color-2: #A52C25; //Dark Red
+$color-3: #0FBB93; //Green
+$color-4: #0F8FBB; //Blue
+$color-5: #333333; //Black
+
+
+
+
+  //////////////////////////////////////////////
+ //// GRID TEMPLATES //////////////////////////
+//////////////////////////////////////////////
+
+header, #header-mask-box, section#main, footer {
 	@include gridTainer;
-	font-family: $font-family;
-	color: $font-color; 
 }
 
-h2 {
-	@include gridCol(12, last)
-}
-
-#main {
+.row {
 	@include gridRow;
+}
+
+
+
+  //////////////////////////////////////////////
+ //// STYLES //////////////////////////////////
+//////////////////////////////////////////////
+
+header {
+	position: relative;
+	background: $color-1 url("/img/bg_crisscross.png") repeat;
+	height: 260px;
+	.row {
+		position: relative;
+		z-index: 10000;
+	}
+	.logo {
+		@include size(350px, 196px);
+		padding: 40px 34px 0;
+		background: url("/img/logo.png") no-repeat center bottom;
+	}
+}
+
+#header-mask-box {
+	position: relative;
+	height: 280px;
+	margin-top: -260px;
+	overflow: hidden;
+	padding: 0;
+	#mask {
+		height: 270px;
+		background: url("/img/bg_headerMask.png") repeat-x 50% 160px;
+		min-width: 1160px;
+		padding-left: 20px;
+	}
 }

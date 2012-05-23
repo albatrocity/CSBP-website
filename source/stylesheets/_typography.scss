@@ -2,8 +2,7 @@ $font-family:	'OpenSansRegular';
 $font-size:		24px;
 $baseline:		1rem;
 $font-color:  #333;
-$header-color:#060D13;
-$background:  #F8FEFF;
+$header-color:#333;
 
 $nav-link:		#1366A6;
 $nav-hover:   #1A8CE5;
@@ -25,7 +24,6 @@ body {
   line-height:  $font-size;
 	line-height:	$baseline;
 	color:   $font-color;
-	background-color: $background;
 	// background: url("img/baseline-grid.png") 0 24px; /* === BASELINE GRID GUIDE === */
 }
 
