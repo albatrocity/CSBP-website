@@ -1,0 +1,32 @@
+@import "compass";
+@import "cremalab-library";
+
+$link-color:         #0388a6;
+$link-hover-color:   #009ce0;
+$link-focus-color:   false;
+$link-active-color:  false;
+$link-visited-color: false;
+
+$font-color:  #2a2a2a;
+$font-family: sans-serif;
+$base-font-size:   12px;
+$base-line-height: 18px;
+
+$total-cols: 12;
+$col-width: 4em;
+$gutter-width: 1em;
+$side-gutter-width: $gutter-width;
+
+body {
+	@include gridTainer;
+	font-family: $font-family;
+	color: $font-color; 
+}
+
+h2 {
+	@include gridCol(12, last)
+}
+
+#main {
+	@include gridRow;
+}
