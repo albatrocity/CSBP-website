@@ -38,7 +38,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $header-color;
+  font-weight: normal;
 }
 
 h1 { 	
@@ -64,14 +64,15 @@ h2 {
 }
 
 h3 { 	
-  font-family:	'OpenSansLight';
+  font-family: 'OpenSansCondensedLight';
 	font-size:    1.00*$font-size;
   line-height:  1.50*$font-size;
   margin:       1.65*$font-size 0 0.90*$font-size;
   
 	font-size:		1.00*$baseline;
 	line-height:	1.50*$baseline;
-	margin:	   		1.65*$baseline 0 0.90*$baseline; 	 				
+	margin:	   		1.65*$baseline 0 0.90*$baseline; 	
+  text-transform: uppercase; 				
 }
 
 h4 { 	

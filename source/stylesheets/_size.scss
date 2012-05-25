@@ -1,4 +1,6 @@
-@mixin size($width: none, $height: none) {
-	width: $width;
-	height: $height;
+@mixin dimens($width, $height: '', $margin: '', $padding: '') {
+	@if $margin		{	margin: 	$margin; 	}
+	@if $width 		{	width:		$width; 	}
+	@if $height 	{	height: 	$height; 	}
+	@if $padding 	{	padding: 	$padding; 	}
 }
