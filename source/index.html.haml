@@ -5,15 +5,15 @@
     
     %h1.mega Howdy Neighbors!
 
-    %p Join us July 6th for the (?1st annual) Crossroads Summer Block Party presented by Golden Sound Records! Enjoy an evening of live music, food, and festivities to celebrate Kansas City's culture and its sweltering (? vibrant / sultry) summers.
+    %aside#about_gsr.extra-info 
+      %p 
+        = link_to 'Golden Sound Records', "https://goldensoundrecords.com"
+        is a Kansas City based record label. We work with (? local) artists (of whom we particularly enjoy) to provide a fresh, exciting catalog of new music.
 
-    %p We're Kicking things off around (? 7PM) on 19th street in the Crossroads (? Arts) District (between Wyandotte and Baltimore). Spend the evening chowing down on local food truck cuisine, hanging with friends & neighbors, and take in the sounds of some of KC's most dynamic local music.
+    :markdown
+      Join us July 6th for the Crossroads Summer Block Party presented by [Golden Sound Records](https://goldensoundrecords.com)! Enjoy an evening of live music, food, and festivities to celebrate Kansas City's culture and its sweltering summers. We're kicking things off around 4PM on 19th street in the Crossroads Arts District (between Wyandotte and Baltimore). Spend the evening chowing down on local food truck cuisine, hanging with friends & neighbors, and taking in the sounds of some of KC's most dynamic local music.
 
-    %p Bring your friends & family to the First Fridays event of 2012, preceding the MLB All-Star game hosted at Kauffman Stadium, and discover a taste of what makes Kansas City and the Crossroads (? Arts) District (? one-of-a-kind.)
-
-    %h3 About Golden Sound Records
-
-    %p Golden Sound Records is a Kansas City based record label. We work with (? local) artists (of whom we particularly enjoy) to provide a fresh, exciting catalog of new music.
+      Bring your friends & family to the First Fridays event of 2012, preceding the big game hosted at Kauffman Stadium, and discover a taste of what makes Kansas City and the Crossroads Arts District one-of-a-kind.
 
   #schedule
     %h2 Schedule
@@ -22,51 +22,58 @@
         .name-time
           .name The Caves
           .time 4:30 - 5
-        %p Formed from a studio band that recorded Mat Shoare’s solo album by the same name The Empty Spaces have been interpreting Shoare’s song writing since early 2010. Eventually the three piece began to collaborate more with song arrangements and stylistic choices yielding a kind of “retro-punk rock” that is fronted with an energetic, yelping vocal style.
-        %img{:src => "img/band_tes.jpg"}
-        %a.band-link{:href => "http://thecaves.us/", :target => "blank"} Website
+        .content
+          %p Formed from a studio band that recorded Mat Shoare’s solo album by the same name The Empty Spaces have been interpreting Shoare’s song writing since early 2010. Eventually the three piece began to collaborate more with song arrangements and stylistic choices yielding a kind of “retro-punk rock” that is fronted with an energetic, yelping vocal style.
+          %img{:src => "img/band_tes.jpg"}
+          %a.band-link{:href => "http://thecaves.us/", :target => "blank"} Website
       %li.band
         .name-time
           .name Cowboy Indian Bear
           .time 4:30 - 5
-        %p Formed from a studio band that recorded Mat Shoare’s solo album by the same name The Empty Spaces have been interpreting Shoare’s song writing since early 2010. Eventually the three piece began to collaborate more with song arrangements and stylistic choices yielding a kind of “retro-punk rock” that is fronted with an energetic, yelping vocal style.
-        %img{:src => "img/band_tes.jpg"}
-        %a.band-link{:href => "http://cowboyindianbear.tumblr.com/", :target => "blank"} Website
+        .content
+          %p Formed from a studio band that recorded Mat Shoare’s solo album by the same name The Empty Spaces have been interpreting Shoare’s song writing since early 2010. Eventually the three piece began to collaborate more with song arrangements and stylistic choices yielding a kind of “retro-punk rock” that is fronted with an energetic, yelping vocal style.
+          %img{:src => "img/band_tes.jpg"}
+          %a.band-link{:href => "http://cowboyindianbear.tumblr.com/", :target => "blank"} Website
       %li.band
         .name-time
           .name The Empty Spaces
           .time 4:30 - 5
-        %p Formed from a studio band that recorded Mat Shoare’s solo album by the same name The Empty Spaces have been interpreting Shoare’s song writing since early 2010. Eventually the three piece began to collaborate more with song arrangements and stylistic choices yielding a kind of “retro-punk rock” that is fronted with an energetic, yelping vocal style.
-        %img{:src => "img/band_tes.jpg"}
-        %a.band-link{:href => "http://theemptyspacesband.com/", :target => "blank"} Website
+        .content
+          %p Formed from a studio band that recorded Mat Shoare’s solo album by the same name The Empty Spaces have been interpreting Shoare’s song writing since early 2010. Eventually the three piece began to collaborate more with song arrangements and stylistic choices yielding a kind of “retro-punk rock” that is fronted with an energetic, yelping vocal style.
+          %img{:src => "img/band_tes.jpg"}
+          %a.band-link{:href => "http://theemptyspacesband.com/", :target => "blank"} Website
       %li.band
         .name-time
           .name Everyday/Everynight
           .time 4:30 - 5
-        %p Formed from a studio band that recorded Mat Shoare’s solo album by the same name The Empty Spaces have been interpreting Shoare’s song writing since early 2010. Eventually the three piece began to collaborate more with song arrangements and stylistic choices yielding a kind of “retro-punk rock” that is fronted with an energetic, yelping vocal style.
-        %img{:src => "img/band_eden.jpg"}
-        %a.band-link{:href => "https://goldensoundrecords.com/artists/everyday-everynight", :target => "blank"} Website
+        .content
+          %p Formed from a studio band that recorded Mat Shoare’s solo album by the same name The Empty Spaces have been interpreting Shoare’s song writing since early 2010. Eventually the three piece began to collaborate more with song arrangements and stylistic choices yielding a kind of “retro-punk rock” that is fronted with an energetic, yelping vocal style.
+          %img{:src => "img/band_eden.jpg"}
+          %a.band-link{:href => "https://goldensoundrecords.com/artists/everyday-everynight", :target => "blank"} Website
       %li.band
         .name-time
           .name Fullbloods
           .time 4:30 - 5 
-        %p Formed from a studio band that recorded Mat Shoare’s solo album by the same name The Empty Spaces have been interpreting Shoare’s song writing since early 2010. Eventually the three piece began to collaborate more with song arrangements and stylistic choices yielding a kind of “retro-punk rock” that is fronted with an energetic, yelping vocal style.
-        %img{:src => "img/band_fullbloods.jpg"}
-        %a.band-link{:href => "http://fullbloods.com/", :target => "blank"} Website 
+        .content
+          %p Formed from a studio band that recorded Mat Shoare’s solo album by the same name The Empty Spaces have been interpreting Shoare’s song writing since early 2010. Eventually the three piece began to collaborate more with song arrangements and stylistic choices yielding a kind of “retro-punk rock” that is fronted with an energetic, yelping vocal style.
+          %img{:src => "img/band_fullbloods.jpg"}
+          %a.band-link{:href => "http://fullbloods.com/", :target => "blank"} Website 
       %li.band
         .name-time
           .name Soft Reeds
           .time 4:30 - 5
-        %p Formed from a studio band that recorded Mat Shoare’s solo album by the same name The Empty Spaces have been interpreting Shoare’s song writing since early 2010. Eventually the three piece began to collaborate more with song arrangements and stylistic choices yielding a kind of “retro-punk rock” that is fronted with an energetic, yelping vocal style.
-        %img{:src => "img/band_tes.jpg"}
-        %a.band-link{:href => "http://softreeds.com/", :target => "blank"} Website
+        .content
+          %p Formed from a studio band that recorded Mat Shoare’s solo album by the same name The Empty Spaces have been interpreting Shoare’s song writing since early 2010. Eventually the three piece began to collaborate more with song arrangements and stylistic choices yielding a kind of “retro-punk rock” that is fronted with an energetic, yelping vocal style.
+          %img{:src => "img/band_tes.jpg"}
+          %a.band-link{:href => "http://softreeds.com/", :target => "blank"} Website
       %li.band
         .name-time
           .name Spirit Is The Spirit
           .time 4:30 - 5
-        %p Formed from a studio band that recorded Mat Shoare’s solo album by the same name The Empty Spaces have been interpreting Shoare’s song writing since early 2010. Eventually the three piece began to collaborate more with song arrangements and stylistic choices yielding a kind of “retro-punk rock” that is fronted with an energetic, yelping vocal style.
-        %img{:src => "img/band_tes.jpg"}
-        %a.band-link{:href => "https://www.facebook.com/spiritisthespirit", :target => "blank"} Website
+        .content
+          %p Formed from a studio band that recorded Mat Shoare’s solo album by the same name The Empty Spaces have been interpreting Shoare’s song writing since early 2010. Eventually the three piece began to collaborate more with song arrangements and stylistic choices yielding a kind of “retro-punk rock” that is fronted with an energetic, yelping vocal style.
+          %img{:src => "img/band_tes.jpg"}
+          %a.band-link{:href => "https://www.facebook.com/spiritisthespirit", :target => "blank"} Website
 
 .sidebar
   #sponsors

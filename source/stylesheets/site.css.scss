@@ -110,6 +110,24 @@ header {
 			}
 		}
 	}
+	.social {
+		z-index: 100;
+		position: absolute;
+		bottom: 20px;
+		left: 68.3%;
+		a {
+			@include inline-block;
+			@include dimens(82px, 40px);
+			@include hide-text;
+			margin-right: 10px;
+			&.twitter {
+				background: url("/img/twitter.png");
+			}
+			&.facebook {
+				background: url("/img/facebook.png");
+			}
+		}
+	}
 }
 
 
@@ -184,10 +202,13 @@ header {
 #schedule-list {
 	list-style: none;
 	.band {
-		padding: 0 0 1em;
+		padding: 0;
 		border-bottom: 10px solid lighten(desaturate($color-4, 50), 50);
 		overflow: hidden;
 
+		.content {
+			margin-bottom: 1em;
+		}
 		&.clicked {	
 			height: auto;		
 		}
@@ -244,5 +265,17 @@ header {
 		}
 	}
 
+}
+
+aside.extra-info {
+	@include gridCol(4);
+	float: right;
+	padding: 20px;
+	background: lighten(desaturate($color-4, 50), 55);
+	margin: 0 0 0 20px;
+	p:last-child {
+		margin-bottom: 0;
+		font-family: 'OpenSansLightItalic';
+	}
 }
 
