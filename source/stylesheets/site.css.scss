@@ -110,7 +110,7 @@ header {
 			background-size: contain;
 			&:last-child {margin: 0;}
 			@media handheld, only screen and (max-width: 856px) {
-				margin: 0 20px 20px 0;
+				margin: 0 40px 20px 0;
 			}
 		}
 		h3 { margin: 6px 0 0; line-height: 16px; text-transform: uppercase;}
@@ -130,6 +130,7 @@ header {
 			@media handheld, only screen and (max-width: 926px) {
 				background: url("/img/when-red.png") no-repeat 0 center;
 				color: $color-2;
+				margin: 10px 0 42px;
 			}
 		}
 		.where {
@@ -321,20 +322,87 @@ header {
 	ul {
 		list-style: none;
 		overflow: hidden;
-		li {
-			float: left;
-			width: 26%;
-			margin: 0 2% 20px;
+		
+		.large {
+			overflow: hidden;
+			li {
+				display: block;
+				float: left;
+				width: 40%;
+				margin: 0 5% 2em;
+			}
 			a {
 				display: block;
-				line-height: 60px;
-			}
-			img {
-				margin: 0 auto;
-				max-height: 60px;
-				vertical-align: middle;
+				background-size: contain;
+				&.goldenSound {
+					height: 80px;
+					background: url('/img/sponsors/golden_sound.png') no-repeat center;
+				}
+				&.thinkBig {
+					height: 70px;
+					margin: 0 0 10px;
+					background: url('/img/sponsors/think_big.png') no-repeat center;
+				}
+				&.globalPrairie {
+					width: 120%;
+					height: 50px;
+					background: url('/img/sponsors/global_prairie.png') no-repeat center;
+				}
+				&.thePitch {
+					width: 80%;
+					height: 40px;
+					margin: 0 0 10px;
+					float: right;
+					background: url('/img/sponsors/the_pitch.png') no-repeat right center;
+				}
+				&.cremalab {
+					width: 120%;
+					height: 40px;
+					background: url('/img/sponsors/cremalab.png') no-repeat center;
+				}
 			}
 		}
+
+		.small {
+			overflow: hidden;
+			li {
+				display: block;
+				float: left;
+				width: 20%;
+				margin: 0 2% 30px;
+			}
+			a {
+				display: block;
+				background-size: contain;
+				&.thinkKc {
+					height: 70px;
+					background: url('/img/sponsors/think_kc.png') no-repeat center;
+				}
+				&.elementOfGreen {
+					height: 70px;
+					background: url('/img/sponsors/elements_of_green.png') no-repeat center;
+				}
+				&.recordMachine {
+					height: 70px;
+					background: url('/img/sponsors/the_record_machine.png') no-repeat center;
+				}
+				&.candc {
+					height: 50px;
+					background: url('/img/sponsors/c_and_c.png') no-repeat center;
+				}
+			}
+		}
+
+		a {
+			display: block;
+			line-height: 60px;
+		}
+		img {
+			margin: 0 auto;
+			max-height: 60px;
+			vertical-align: middle;
+		}
+	
 	}
 }
 
