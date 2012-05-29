@@ -51,6 +51,10 @@ body {
  //// HEADER //////////////////////////////////
 //////////////////////////////////////////////
 
+#header-wrap {
+
+}
+
 header {
 	position: relative;
 	background: $color-1 url("/img/bg_crisscross.png") repeat;
@@ -61,6 +65,7 @@ header {
 	}
 	#logo-box {
 		@include gridCol(5);
+		margin-bottom: 20px;
 		overflow: visible !important;
 		.logo {
 			@include dimens(400px, 180px, null, 50px 0 0);
@@ -70,24 +75,42 @@ header {
 	}
 	.details {
 		@include gridCol(7, last);
-		padding-top: 50px;
-		margin-bottom: 0;
-		list-style: none;
-		color: #fff;
-		white-space: nowrap;
+		overflow: hidden;
+		margin-bottom: 20px;
+		@media handheld, only screen and (max-width: 927px) {
+			display: block;
+			width: auto;
+			white-space: normal;
+		}
+
+		ul {
+			float: right;
+			padding-top: 50px;
+			margin-bottom: 0;
+			list-style: none;
+			color: #fff;
+			white-space: nowrap;
+			@media handheld, only screen and (max-width: 926px) {
+				float: left;
+				white-space: normal;
+			}
+		}
 		
 		li { 
-			@include dimens(null, null, 0 20px 0 0);
+			margin: 0 40px 0 0;
 			white-space: nowrap;
 			float: left;
 			&:last-child {margin: 0;}
+			@media handheld, only screen and (max-width: 856px) {
+				margin: 0 20px 20px 0;
+			}
 		}
 		h3 { margin: 6px 0 0; line-height: 16px; text-transform: uppercase;}
 		.bottom {font-family: 'OpenSansCondensedBold'}
 		.free {
 			@include dimens(103px, 62px);
 			background: url("/img/free.png") no-repeat right center;
-			@media handheld, only screen and (max-width: 767px) {
+			@media handheld, only screen and (max-width: 926px) {
 				@include dimens(103px, 62px);
 				background: url("/img/free-red.png") no-repeat right center;
 			}
@@ -95,7 +118,7 @@ header {
 		.when {
 			@include dimens(null, null, null, 4px 0 0 60px);
 			background: url("/img/when.png") no-repeat 0 center;
-			@media handheld, only screen and (max-width: 767px) {
+			@media handheld, only screen and (max-width: 926px) {
 				@include dimens(null, null, null, 4px 0 0 60px);
 				background: url("/img/when-red.png") no-repeat 0 center;
 				color: $color-2;
@@ -104,7 +127,7 @@ header {
 		.where {
 			@include dimens(null, null, null, 4px 0 0 40px);
 			background: url("/img/where.png") no-repeat 0 center;
-			@media handheld, only screen and (max-width: 767px) {
+			@media handheld, only screen and (max-width: 926px) {
 				@include dimens(null, null, null, 4px 0 0 40px);
 				background: url("/img/where-red.png") no-repeat 0 center;
 				color: $color-2;
@@ -114,8 +137,19 @@ header {
 	.social {
 		z-index: 100;
 		position: absolute;
-		bottom: 20px;
-		left: 68.3%;
+		right: 0;
+		bottom: 0;
+		width: 200px;
+		@media handheld, only screen and (max-width: 926px) {
+			position: relative;
+
+		}
+		@media handheld, only screen and (max-width: 767px) {
+			@include gridCol(12, last);
+			padding-left: 20px;
+			padding-right: 20px;
+
+		}
 		a {
 			@include inline-block;
 			@include dimens(82px, 40px);
@@ -138,6 +172,12 @@ header {
 	margin-top: -260px;
 	overflow: hidden;
 	padding: 0;
+	@media handheld, only screen and (max-width: 926px) {
+		margin-bottom: 9em;
+	}
+	@media handheld, only screen and (max-width: 507px) {
+		margin-bottom: 13em;
+	}
 	#mask {
 		height: 270px;
 		background: url("/img/bg_headerMask.png") repeat-x 50% 160px;
@@ -154,6 +194,10 @@ header {
 
 .main-content {
 	@include gridCol(8);
+	margin-bottom: 4em;
+	@media handheld, only screen and (max-width: 767px) {
+		margin-bottom: 4em;
+	}
 }
 
 .content-header {
@@ -219,6 +263,9 @@ header {
 			height: 60px;
 			font-size: 24px;
 			cursor: pointer;
+			@media handheld, only screen and (max-width: 767px) {
+			    font-size: 18px;
+			 }
 			&:hover {
 				background: lighten(desaturate($color-4, 50), 55); 
 				margin: 0 -20px;
@@ -229,6 +276,7 @@ header {
 				display: block;
 				float: left;
 				text-transform: uppercase;
+
 			}
 			.time { 
 				float: right;
@@ -246,6 +294,10 @@ header {
 
 .sidebar {
 	@include gridCol(4, last);
+	margin-bottom: 4em;
+	@media handheld, only screen and (max-width: 767px) {
+		margin-bottom: 4em;
+	}
 }
 
 .sponsors {
@@ -283,19 +335,24 @@ aside.extra-info {
 
 footer {
 	background: $color-3 url("/img/bg_crisscross.png") repeat;
+	
 	.details {
 		@include gridCol(12, last);
-		padding-top: 50px;
+		padding: 50px 0;
 		margin-bottom: 0;
 		list-style: none;
 		color: $color-6;
 		white-space: nowrap;
+		overflow: hidden;
 		
 		li { 
-			@include dimens(null, null, 0 20px 0 0);
+			margin-right: 40px;
 			white-space: nowrap;
 			float: left;
 			&:last-child {margin: 0;}
+			@media handheld, only screen and (max-width: 767px) {
+				margin: 0 40px 40px 0
+			}
 		}
 		h3 { margin: 6px 0 0; line-height: 16px; text-transform: uppercase;}
 		.bottom {font-family: 'OpenSansCondensedBold'}
@@ -323,5 +380,17 @@ footer {
 			}
 		}
 	}
+
+	.sponsors {
+		ul {
+			@include gridCol(12, last);
+		}
+	}
+
+}
+
+#footer-topBorder {
+	height: 15px;
+	background: url("/img/bg_grassTooth.png") repeat-x;
 }
 

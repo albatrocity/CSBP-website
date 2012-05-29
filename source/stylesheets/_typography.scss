@@ -34,7 +34,16 @@ body {
   
   font-size: 		3.00*$baseline;
 	line-height: 	3.00*$baseline;
-	margin:	   		2.18*$baseline 0 0.85*$baseline;						
+	margin:	   		2.18*$baseline 0 0.85*$baseline;	
+  @media handheld, only screen and (max-width: 767px) {
+    font-size:    2.5*$font-size;
+    line-height:  2.5*$font-size;
+    margin:       2.18*$font-size 0 0.85*$font-size;
+  
+    font-size:    2.5*$baseline;
+    line-height:  2.5*$baseline;
+    margin:       2.18*$baseline 0 0.85*$baseline;
+  }					
 }
 
 h1, h2, h3, h4, h5, h6 {
