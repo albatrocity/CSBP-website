@@ -82,8 +82,8 @@ header {
 	}
 	.details {
 		@include gridCol(7, last);
-		overflow: hidden;
 		margin-bottom: 20px;
+		overflow: auto;
 		@media handheld, only screen and (max-width: 927px) {
 			display: block;
 			width: 100%;
@@ -108,39 +108,39 @@ header {
 			white-space: nowrap;
 			float: left;
 			background-size: contain;
-			&:last-child {margin: 0;}
-			@media handheld, only screen and (max-width: 856px) {
-				margin: 0 40px 20px 0;
-			}
 		}
 		h3 { margin: 6px 0 0; line-height: 16px; text-transform: uppercase;}
 		.bottom {font-family: 'OpenSansCondensedBold'}
 		.free {
-			@include dimens(103px, 62px);
+			width: 103px;
+			height: 62px;
+			margin: 10px 40px 42px 0;
 			background: url("/img/free.png") no-repeat right center;
 			@media handheld, only screen and (max-width: 926px) {
-				@include dimens(103px, 62px);
+				margin: 0 40px 0 0;
 				background: url("/img/free-red.png") no-repeat right center;
 			}
 		}
 		.when {
 			height: 40px;
 			padding: 0 0 0 60px;
+			margin: 20px 40px 42px 0;
 			background: url("/img/when.png") no-repeat 0 center;
 			@media handheld, only screen and (max-width: 926px) {
 				background: url("/img/when-red.png") no-repeat 0 center;
 				color: $color-2;
-				margin: 10px 0 42px;
+				margin: 20px 40px 10px 0;
 			}
 		}
 		.where {
 			height: 40px;
 			padding: 0 0 0 40px;
+			margin: 20px 40px 42px 0;
 			background: url("/img/where.png") no-repeat 0 center;
 			@media handheld, only screen and (max-width: 926px) {
-				@include dimens(null, null, null, 4px 0 0 40px);
 				background: url("/img/where-red.png") no-repeat 0 center;
 				color: $color-2;
+				margin: 20px 20px 10px 0;
 			}
 		}
 	}
@@ -186,8 +186,8 @@ header {
 	@media handheld, only screen and (max-width: 926px) {
 		margin-bottom: 9em;
 	}
-	@media handheld, only screen and (max-width: 507px) {
-		margin-bottom: 13em;
+	@media handheld, only screen and (max-width: 525px) {
+		margin-bottom: 14em;
 	}
 	#mask {
 		height: 270px;
