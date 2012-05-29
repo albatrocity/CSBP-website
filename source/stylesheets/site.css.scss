@@ -17,6 +17,7 @@ $color-2: #A52C25; //Dark Red
 $color-3: #0FBB93; //Green
 $color-4: #0F8FBB; //Blue
 $color-5: #333333; //Black
+$color-6: #064B3B; //Dark Green
 
 
 
@@ -245,7 +246,9 @@ header {
 
 .sidebar {
 	@include gridCol(4, last);
-	// h3 { text-align: center;}
+}
+
+.sponsors {
 	ul {
 		list-style: none;
 		overflow: hidden;
@@ -264,7 +267,6 @@ header {
 			}
 		}
 	}
-
 }
 
 aside.extra-info {
@@ -276,6 +278,50 @@ aside.extra-info {
 	p:last-child {
 		margin-bottom: 0;
 		font-family: 'OpenSansLightItalic';
+	}
+}
+
+footer {
+	background: $color-3 url("/img/bg_crisscross.png") repeat;
+	.details {
+		@include gridCol(12, last);
+		padding-top: 50px;
+		margin-bottom: 0;
+		list-style: none;
+		color: $color-6;
+		white-space: nowrap;
+		
+		li { 
+			@include dimens(null, null, 0 20px 0 0);
+			white-space: nowrap;
+			float: left;
+			&:last-child {margin: 0;}
+		}
+		h3 { margin: 6px 0 0; line-height: 16px; text-transform: uppercase;}
+		.bottom {font-family: 'OpenSansCondensedBold'}
+		.free {
+			@include dimens(103px, 62px);
+			background: url("/img/free-green.png") no-repeat right center;
+			
+		}
+		.when {
+			@include dimens(null, null, null, 4px 0 0 60px);
+			background: url("/img/when-green.png") no-repeat 0 center;
+		}
+		.where {
+			padding: 10px 0 0 40px;
+			background: url("/img/where-green.png") no-repeat 0 center;
+		}
+		.info {
+			padding: 20px 0 20px 60px;
+			background: url("/img/info-green.png") no-repeat 0 center;
+			a {
+				color: $color-6;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
 	}
 }
 

@@ -76,22 +76,11 @@
           %a.band-link{:href => "https://www.facebook.com/spiritisthespirit", :target => "blank"} Website
 
 .sidebar
-  #sponsors
+  .sponsors
     %h3 Sponsors
     %ul
-      %li
-        %a{:href => "http://www.pitch.com/"} 
-          %img{:src => "img/sponsor_pitch.png"}
-      %li
-        %a{:href => "http://www.pitch.com/"} 
-          %img{:src => "img/sponsor_t2.gif"}
-      %li
-      %li
-      %li
-      %li
-      %li
-      %li
-      %li
+      = partial "sponsors"
+      
   #twitter
     %h3 News Feed
     %script{:charset => "utf-8", :src => "http://widgets.twimg.com/j/2/widget.js"}
