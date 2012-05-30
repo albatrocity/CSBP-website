@@ -1,15 +1,51 @@
 $ ->
+  spinOpts =
+    lines: 7
+    length: 0
+    width: 3
+    radius: 6
+    rotate: 0
+    color: "#000"
+    speed: 0.9
+    trail: 24
+    shadow: false
+    hwaccel: false
+    className: "spinner"
+    zIndex: 2e9
+    top: "auto"
+    left: "auto"
+
+
   $('.band .content').wrap("<div class='content-wrapper'></div>")
   $('.band .name-time').click ->
-    current       = $(this).parent(".band")
+    current       = $(this).parent ".band"
+    photo         = current.find '.photo'
+    photoURL      = photo.data 'src'
     notCurrent    = $('.band').not(current)
-    notCurrent.removeClass('active').find('.content-wrapper').css
+    notCurrent.find('.content-wrapper').css
       height: 0
       opacity: 0
-    current.addClass('active').find('.content-wrapper').css
-      height: current.find('.content').outerHeight() + 20,
-      opacity: 1
-  $(window).resize ->
-    current = $('.band.active .content-wrapper')
-    unless current.css('height') == 'auto'
-      $('.band.active .content-wrapper').css 'height', 'auto'
+
+    current.addClass('loading').append("<div id='loading'></div>")
+    $('#loading').spin(spinOpts)
+    photo.find('img').attr('src', photoURL).imagesLoaded ->
+      current.removeClass('loading').find('#loading').remove()
+      current.find('.content-wrapper').css
+        height: current.find('.content').outerHeight() + 20,
+        opacity: 1
+
+
+
+$.fn.spin = (opts) ->
+  @each ->
+    $this = $(this)
+    data = $this.data()
+    if data.spinner
+      data.spinner.stop()
+      delete data.spinner
+    if opts isnt false
+      data.spinner = new Spinner($.extend(
+        color: $this.css("color")
+      , opts)).spin(this)
+
+  this
