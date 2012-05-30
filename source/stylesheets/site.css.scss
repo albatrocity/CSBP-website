@@ -444,8 +444,8 @@ header {
 					background-image: url('/img/sponsors/global_prairie.png');
 				}
 				&.thePitch {
-					width: 80%;
-					height: 40px;
+					width: 85%;
+					height: 44px;
 					margin: 0 0 10px;
 					float: right;
 					background-image: url('/img/sponsors/pitch.png');
@@ -491,6 +491,10 @@ header {
 				&.t2 {
 					height: 70px;
 					background-image: url('/img/sponsors/t2.png');	
+				}
+				&.mmf {
+					height: 60px;
+					background-image: url('/img/sponsors/mmf.png');	
 				}
 				background-repeat: no-repeat;
 				background-position: center;
