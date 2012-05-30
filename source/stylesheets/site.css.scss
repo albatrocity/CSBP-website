@@ -55,6 +55,9 @@ header {
 	position: relative;
 	background: $color-1 url("/img/bg_crisscross.png") repeat;
 	height: 260px;
+	@media handheld, only screen and (max-width: 500px) {
+		height: 330px;
+	}		
 	.row {
 		position: relative;
 		z-index: 10000;
@@ -84,11 +87,17 @@ header {
 		@include gridCol(7, last);
 		margin-bottom: 20px;
 		overflow: auto;
-		@media handheld, only screen and (max-width: 927px) {
+		@media handheld, only screen and (max-width: 926px) {
 			display: block;
 			width: 100%;
 			white-space: normal;
+			text-align: center;
 		}
+		@media handheld, only screen and (max-width: 500px) {
+			width: 100%;
+			padding: 0;
+			margin: 70px 0 0 0;
+		}		
 
 		ul {
 			float: right;
@@ -101,13 +110,22 @@ header {
 				float: left;
 				white-space: normal;
 			}
+			@media handheld, only screen and (max-width: 500px) {
+				width: 100%;
+				padding: 20px 0 0 0;
+			}			
 		}
 		
 		li { 
 			margin: 0 40px 0 0;
 			white-space: nowrap;
-			float: left;
+			@include inline-block;
 			background-size: contain;
+			@media handheld, only screen and (max-width: 500px) {
+				display: block;
+				text-align: left;
+				margin: 25px auto !important;
+			}
 		}
 		h3 { margin: 6px 0 0; line-height: 16px; text-transform: uppercase;}
 		.bottom {font-family: 'OpenSansCondensedBold'}
@@ -131,8 +149,12 @@ header {
 				color: $color-2;
 				margin: 20px 40px 10px 0;
 			}
+			@media handheld, only screen and (max-width: 500px) {
+				width: 160px;
+			}			
 		}
 		.where {
+			width: 160px;
 			height: 40px;
 			padding: 0 0 0 40px;
 			margin: 20px 40px 42px 0;
@@ -142,6 +164,11 @@ header {
 				color: $color-2;
 				margin: 20px 20px 10px 0;
 			}
+			@media handheld, only screen and (max-width: 500px) {
+				width: 160px;
+				padding-left: 60px;
+				background-position: 8px center;
+			}				
 		}
 	}
 	.social {
@@ -154,11 +181,18 @@ header {
 			position: relative;
 
 		}
-		@media handheld, only screen and (max-width: 767px) {
-			@include gridCol(12, last);
-			padding-left: 20px;
-			padding-right: 20px;
+		// @media handheld, only screen and (max-width: 767px) {
+		// 	@include gridCol(12, last);
+		// 	padding-left: 20px;
+		// 	padding-right: 20px;
 
+		// }
+		@media handheld, only screen and (max-width: 767px) {
+			padding: 0;
+			width: 100%;
+			text-align: center;
+			height: 40px;
+			margin-bottom: 10px;
 		}
 		a {
 			@include inline-block;
@@ -222,6 +256,9 @@ header {
 		font-family: 'OpenSansCondensedBold';
 		text-transform: uppercase;
 		text-shadow: 2px 2px 0 #fff, 4px 4px 0 #D5DCE1 ;
+		@media handheld, only screen and (max-width: 500px) {
+			text-align: center;
+		}			
 	}
 
 }
@@ -432,6 +469,9 @@ aside.extra-info {
 		margin-bottom: 0;
 		font-family: 'OpenSansLightItalic';
 	}
+	@media handheld, only screen and (max-width: 500px) {
+		display: none;
+	}		
 }
 
 footer {
