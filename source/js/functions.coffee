@@ -1,20 +1,11 @@
 $ ->
-  ###
-  $(".band").each ->
-    h = $(this).height()
-    $(this).attr "data-height", h
-    $(this).height "40"
-
-  $(".name-time").click (e) ->
-    e.preventDefault()
-    band = $(this).parent(".band")
-    h = band.data("height")
-    console.log h
-    $(".band").not(band).animate height: "40"
-    band.animate height: "auto"
-  ###
-  $('.band .content').hide()
+  $('.band .content').wrap("<div class='content-wrapper'></div>")
   $('.band .name-time').click ->
     current = $(this).parent(".band")
-    $('.band').not(current).find('.content').slideUp('fast')
-    current.find('.content').slideToggle('fast')
+    notCurrent = $('.band').not(current)
+    notCurrent.find('.content-wrapper').css
+      height: 0
+      opacity: 0
+    current.find('.content-wrapper').css
+      height: current.find('.content').outerHeight() + 20,
+      opacity: 1
