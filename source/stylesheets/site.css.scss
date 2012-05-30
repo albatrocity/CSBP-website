@@ -325,10 +325,10 @@ header {
 		
 		.large {
 			overflow: hidden;
+			text-align: center;
 			li {
-				display: block;
-				float: left;
-				width: 40%;
+				@include inline-block;
+				width: 39%;
 				margin: 0 5% 2em;
 			}
 			a {
@@ -365,9 +365,9 @@ header {
 
 		.small {
 			overflow: hidden;
+			text-align: center;
 			li {
-				display: block;
-				float: left;
+				@include inline-block;
 				width: 20%;
 				margin: 0 2% 30px;
 			}
@@ -389,6 +389,10 @@ header {
 				&.candc {
 					height: 50px;
 					background: url('/img/sponsors/c_and_c.png') no-repeat center;
+				}
+				&.t2 {
+					height: 70px;
+					background: url('/img/sponsors/t2.png') no-repeat center;	
 				}
 			}
 		}
