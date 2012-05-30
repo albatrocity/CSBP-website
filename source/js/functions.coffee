@@ -28,11 +28,17 @@ $ ->
 
     current.addClass('loading').append("<div id='loading'></div>")
     $('#loading').spin(spinOpts)
-    photo.find('img').attr('src', photoURL).imagesLoaded ->
-      current.removeClass('loading').find('#loading').remove()
-      current.find('.content-wrapper').css
-        height: current.find('.content').outerHeight() + 20,
-        opacity: 1
+    if photo.find('img').attr('src') == undefined
+      photo.find('img').attr('src', photoURL).imagesLoaded ->
+        revealImage(current)
+    else
+      revealImage(current)
+
+  revealImage = (el) ->
+    el.removeClass('loading').find('#loading').remove()
+    el.find('.content-wrapper').css
+      height: el.find('.content').outerHeight() + 20,
+      opacity: 1
 
 
 
