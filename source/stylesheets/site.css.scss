@@ -133,19 +133,27 @@ header {
 			width: 103px;
 			height: 62px;
 			margin: 10px 40px 42px 0;
-			background: url("/img/free.png") no-repeat right center;
+			background-image: url("/img/free.png");
+			background-repeat: no-repeat;
+			background-position: right center;	
 			@media handheld, only screen and (max-width: 926px) {
 				margin: 0 40px 0 0;
-				background: url("/img/free-red.png") no-repeat right center;
+				background-image: url("/img/free-red.png");
+				background-repeat: no-repeat;
+				background-position: right center;					
 			}
 		}
 		.when {
 			height: 40px;
 			padding: 0 0 0 60px;
 			margin: 20px 40px 42px 0;
-			background: url("/img/when.png") no-repeat 0 center;
+			background-image: url("/img/when.png");
+			background-repeat: no-repeat;
+			background-position: 0 center;	
 			@media handheld, only screen and (max-width: 926px) {
-				background: url("/img/when-red.png") no-repeat 0 center;
+				background-image: url("/img/when-red.png");
+				background-repeat: no-repeat;
+				background-position: 0 center;					
 				color: $color-2;
 				margin: 20px 40px 10px 0;
 			}
@@ -158,9 +166,13 @@ header {
 			height: 40px;
 			padding: 0 0 0 40px;
 			margin: 20px 40px 42px 0;
-			background: url("/img/where.png") no-repeat 0 center;
+			background-image: url("/img/where.png");
+			background-repeat: no-repeat;
+			background-position: 0 center;				
 			@media handheld, only screen and (max-width: 926px) {
-				background: url("/img/where-red.png") no-repeat 0 center;
+				background-image: url("/img/where-red.png");
+				background-repeat: no-repeat;
+				background-position: 0 center;					
 				color: $color-2;
 				margin: 20px 20px 10px 0;
 			}
@@ -201,10 +213,14 @@ header {
 			margin-right: 10px;
 			background-size: contain;
 			&.twitter {
-				background: url("/img/twitter.png");
+				background-image: url("/img/twitter.png");
+				background-repeat: no-repeat;
+				background-position: center;					
 			}
 			&.facebook {
-				background: url("/img/facebook.png");
+				background-image: url("/img/facebook.png");
+				background-repeat: no-repeat;
+				background-position: center;					
 			}
 		}
 	}
@@ -225,13 +241,17 @@ header {
 	}
 	#mask {
 		height: 270px;
-		background: url("/img/bg_headerMask.png") repeat-x 50% 160px;
+		background-image: url("/img/bg_headerMask.png");
+		background-repeat: repeat-x;
+		background-position: 50% 160px;	
 		min-width: 1160px;
 		padding-left: 20px;
 		@media handheld, only screen and (max-width: 767px) {
 			min-width: 0;
 			padding-left: 0;
-			background: url("/img/bg_headerMask_mobile.png") repeat-x center 160px;
+			background-image: url("/img/bg_headerMask_mobile.png");
+			background-repeat: repeat-x;
+			background-position: center 160px;				
 		}
 	}
 }
@@ -282,7 +302,9 @@ header {
 			height: 60px;
 			margin: 0 0 0 -30px;
 			float: left;
-			background: url('/img/bg_ribbon-left.png') no-repeat 0 0;
+			background-image: url('/img/bg_ribbon-left.png');
+			background-repeat: no-repeat;
+			background-position: 0 0;				
 			background-size: contain;
 		}
 
@@ -293,7 +315,9 @@ header {
 			height: 60px;
 			margin: 0 -30px 0 0;
 			float: right;
-			background: url('/img/bg_ribbon-right.png') no-repeat 0 0;
+			background-image: url('/img/bg_ribbon-right.png');
+			background-repeat: no-repeat;
+			background-position: 0 0 ;				
 			background-size: contain;
 		}
 	}
@@ -405,34 +429,35 @@ header {
 				margin: 0 5% 2em;
 			}
 			a {
-				display: block;
-				background-size: contain;
 				&.goldenSound {
 					height: 80px;
-					background: url('/img/sponsors/golden_sound.png') no-repeat center;
+					background-image: url('/img/sponsors/golden_sound.png');
 				}
 				&.thinkBig {
 					height: 70px;
 					margin: 0 0 10px;
-					background: url('/img/sponsors/think_big.png') no-repeat center;
+					background-image: url('/img/sponsors/think_big.png');
 				}
 				&.globalPrairie {
 					width: 120%;
 					height: 50px;
-					background: url('/img/sponsors/global_prairie.png') no-repeat center;
+					background-image: url('/img/sponsors/global_prairie.png');
 				}
 				&.thePitch {
 					width: 80%;
 					height: 40px;
 					margin: 0 0 10px;
 					float: right;
-					background: url('/img/sponsors/pitch.png') no-repeat right center;
+					background-image: url('/img/sponsors/pitch.png');
 				}
 				&.cremalab {
 					width: 120%;
 					height: 40px;
-					background: url('/img/sponsors/cremalab.png') no-repeat center;
+					background-image: url('/img/sponsors/cremalab.png');
 				}
+				display: block;
+				background-size: contain;
+				background-repeat: no-repeat;
 			}
 		}
 
@@ -449,24 +474,26 @@ header {
 				background-size: contain;
 				&.thinkKc {
 					height: 70px;
-					background: url('/img/sponsors/think_kc.png') no-repeat center;
+					background-image: url('/img/sponsors/think_kc.png');
 				}
 				&.elementOfGreen {
 					height: 70px;
-					background: url('/img/sponsors/elements_of_green.png') no-repeat center;
+					background-image: url('/img/sponsors/elements_of_green.png');
 				}
 				&.recordMachine {
 					height: 70px;
-					background: url('/img/sponsors/the_record_machine.png') no-repeat center;
+					background-image: url('/img/sponsors/the_record_machine.png');
 				}
 				&.candc {
 					height: 50px;
-					background: url('/img/sponsors/c_and_c.png') no-repeat center;
+					background-image: url('/img/sponsors/c_and_c.png');
 				}
 				&.t2 {
 					height: 70px;
-					background: url('/img/sponsors/t2.png') no-repeat center;	
+					background-image: url('/img/sponsors/t2.png');	
 				}
+				background-repeat: no-repeat;
+				background-position: center;
 			}
 		}
 
@@ -509,7 +536,8 @@ footer {
 		position: absolute;
 		top: -150px;
 		right: 30px;
-		background: url("/img/flamingos.png") no-repeat;
+		background-image: url("/img/flamingos.png");
+		background-repeat: no-repeat;
 		@media handheld, only screen and (max-width: 767px) {
 			width: 260px;
 			height: 142px;
@@ -538,23 +566,30 @@ footer {
 		.bottom {font-family: 'OpenSansCondensedBold'}
 		.free {
 			@include dimens(103px, 62px);
-			background: url("/img/free-green.png") no-repeat right center;
+			background-image: url("/img/free-green.png");
+			background-position: no-repeat right center;
 			
 		}
 		.when {
 			height: 40px;
 			padding: 0 0 0 60px;
-			background: url("/img/when-green.png") no-repeat 0 center;
+			background-image: url("/img/when-green.png");
+			background-repeat: no-repeat;
+			background-position: left center;
 		}
 		.where {
 			height: 40px;
 			padding: 0 0 0 40px;
-			background: url("/img/where-green.png") no-repeat 0 center;
+			background-image: url("/img/where-green.png");
+			background-repeat: no-repeat;
+			background-position: 0 center;			
 		}
 		.info {
 			height: 40px;
 			padding: 0 0 0 50px;
-			background: url("/img/info-green.png") no-repeat 0 center;
+			background-image: url("/img/info-green.png");
+			background-repeat: no-repeat;
+			background-position: 0 center;						
 			a {
 				color: $color-6;
 				&:hover {
