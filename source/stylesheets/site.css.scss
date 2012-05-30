@@ -251,7 +251,7 @@ header {
 }
 
 .content-header {
-	margin: 0 0 6em;
+	margin: 0 0 2em;
 	.mega {
 		font-family: 'OpenSansCondensedBold';
 		text-transform: uppercase;
@@ -505,11 +505,11 @@ footer {
 	#flamingos {
 		background-size: contain;
 		width: 300px;
-		height: 165px;
+		height: 164px;
 		position: absolute;
 		top: -150px;
 		right: 30px;
-		background: url("/img/flamingos.png");
+		background: url("/img/flamingos.png") no-repeat;
 		@media handheld, only screen and (max-width: 767px) {
 			width: 260px;
 			height: 142px;

@@ -22,17 +22,22 @@ $ ->
     photo         = current.find '.photo'
     photoURL      = photo.data 'src'
     notCurrent    = $('.band').not(current)
-    notCurrent.find('.content-wrapper').css
-      height: 0
-      opacity: 0
 
-    current.addClass('loading').append("<div id='loading'></div>")
-    $('#loading').spin(spinOpts)
-    if photo.find('img').attr('src') == undefined
-      photo.find('img').attr('src', photoURL).imagesLoaded ->
-        revealImage(current)
+    if current.hasClass 'active'
+      current.removeClass('active').find('.content-wrapper').css
+        height: 0
+        opacity: 0   
     else
-      revealImage(current)
+      notCurrent.removeClass('active').find('.content-wrapper').css
+        height: 0
+        opacity: 0      
+      current.addClass('loading active').append("<div id='loading'></div>")
+      $('#loading').spin(spinOpts)
+      if photo.find('img').attr('src') == undefined
+        photo.find('img').attr('src', photoURL).imagesLoaded ->
+          revealImage(current)
+      else
+        revealImage(current)
 
   revealImage = (el) ->
     el.removeClass('loading').find('#loading').remove()
