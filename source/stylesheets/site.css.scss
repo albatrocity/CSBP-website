@@ -313,6 +313,16 @@ header {
 		.content {
 			margin-bottom: 1em;
 		}
+		.photo {
+			max-height: 254px;
+			overflow: hidden;
+			margin-bottom: 10px;
+		}
+		&.soft-reeds {
+			.photo {
+				max-height: 440px;
+			}
+		}
 		&.clicked {	
 			height: auto;		
 		}
@@ -476,7 +486,21 @@ aside.extra-info {
 
 footer {
 	background: $color-3 url("/img/bg_crisscross.png") repeat;
+	position: relative;
 	
+	#flamingos {
+		background-size: contain;
+		width: 300px;
+		height: 165px;
+		position: absolute;
+		top: -150px;
+		right: 30px;
+		background: url("/img/flamingos.png");
+		@media handheld, only screen and (max-width: 767px) {
+			width: 260px;
+			height: 142px;
+		}			
+	}
 	.details {
 		@include gridCol(12, last);
 		padding: 50px 0;
@@ -538,5 +562,8 @@ footer {
 	height: 15px;
 	background: url("/img/bg_grassTooth.png") repeat-x;
 	background-size: contain;
+	@media handheld, only screen and (max-width: 767px) {
+		margin-top: 100px;
+	}		
 }
 
