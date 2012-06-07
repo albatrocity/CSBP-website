@@ -429,6 +429,7 @@ header {
 				margin: 0 5% 2em;
 				&.boveri {
 					width: 18%;
+					float: right;
 				}
 			}
 			a {
@@ -481,6 +482,9 @@ header {
 				@include inline-block;
 				width: 20%;
 				margin: 0 2% 30px;
+				&.hammerpress {
+					width: 24%;
+				}
 			}
 			a {
 				display: block;
@@ -496,6 +500,10 @@ header {
 				&.recordMachine {
 					height: 70px;
 					background-image: url('/img/sponsors/the_record_machine.png');
+				}
+				&.sporting {
+					height: 80px;
+					background-image: url('/img/sponsors/sporting_kc.png');
 				}
 				&.candc {
 					height: 50px;
