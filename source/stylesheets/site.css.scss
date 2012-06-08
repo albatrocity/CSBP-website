@@ -426,7 +426,7 @@ header {
 			li {
 				@include inline-block;
 				width: 39%;
-				margin: 0 5% 2em;
+				margin: 0 5% 1em;
 				&.boveri {
 					width: 18%;
 					float: right;
@@ -458,6 +458,11 @@ header {
 					float: right;
 					background-image: url('/img/sponsors/pitch.png');
 				}
+				&.moBank {
+					width: 100%;
+					height: 140px;
+					background-image: url('/img/sponsors/mo_bank.png');
+				}				
 				&.boveri {
 					width: 100%;
 					height: 140px;
