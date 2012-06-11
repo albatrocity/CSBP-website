@@ -472,7 +472,14 @@ header {
 				&.cremalab {
 					width: 120%;
 					height: 40px;
+					margin-left: -12px;
 					background-image: url('/img/sponsors/cremalab.png');
+				}
+				&.snowCo {
+					width: 100%;
+					height: 70px;
+					margin: 12px 0 0 8px;
+					background-image: url('/img/sponsors/snow_co.png');
 				}
 				display: block;
 				background-size: contain;
