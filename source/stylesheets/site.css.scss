@@ -466,20 +466,27 @@ header {
 				}				
 				&.boveri {
 					width: 100%;
-					height: 140px;
+					height: 170px;
+					margin-top: 35%;
 					background-image: url('/img/sponsors/boveri.png');
 				}
 				&.cremalab {
 					width: 120%;
 					height: 40px;
-					margin-top: 15%;
+					margin-left: -12px;
 					background-image: url('/img/sponsors/cremalab.png');
 				}
 				&.alcGroup {
 					width: 100%;
 					height: 50px;
-					margin-left: 20%;
+					margin-left: 10%;
 					background-image: url('/img/sponsors/alc_group.png');
+				}
+                &.snowCo {
+					width: 100%;
+					height: 60px;
+					margin: 12px 0 12px 8px;
+					background-image: url('/img/sponsors/snow_co.png');
 				}
 				display: block;
 				background-size: contain;
