@@ -507,7 +507,7 @@ header {
 				width: 20%;
 				margin: 0 2% 30px;
 				&.hammerpress, &.mpress {
-					width: 24%;
+					width: 30%;
 				}
 			}
 			a {
@@ -543,13 +543,13 @@ header {
 				}
 				&.hammerpress {
 					height: 60px;
-					width: 140%;
+					width: 100%;
 					max-width: 150px;
 					background-image: url('/img/sponsors/hammerpress.png');	
 				}		
 				&.mpress {
 					height: 60px;
-					width: 160%;
+					width: 100%;
 					max-width: 150px;
 					background-image: url('/img/sponsors/mpress.png');	
 				}		
