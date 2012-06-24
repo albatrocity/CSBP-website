@@ -1,9 +1,16 @@
+@import "compass";
 
+$color-1: #EE3F35; //Red
+$color-2: #A52C25; //Dark Red
+$color-3: #0FBB93; //Green
+$color-4: #0F8FBB; //Blue
+$color-5: #333333; //Black
+$color-6: #064B3B; //Dark Green
 
 .ttw-music-player {
-    width: 370px;
+    width: 100%;
     margin: 60px auto;
-    font-family: 'Lato', arial, sans-serif;
+    position: relative;
 }
 
 .ttw-music-player .player {
@@ -12,8 +19,10 @@
 
 /** Album Cover **/
 .ttw-music-player .album-cover {
-    position: relative;
-    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    // float: left;
     background: #333 url(/img/player/album-cover-bg.jpg) no-repeat 0 0 scroll;;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, .75);
     -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, .75);
@@ -59,9 +68,7 @@
 
 /** Track Info **/
 .ttw-music-player .track-info {
-    width: 215px;
-    margin: 8px 0 0 30px;
-    float: left;
+    margin: 8px 0 0 140px;
     font-size: 12px;
 }
 
@@ -70,28 +77,27 @@
 }
 
 .ttw-music-player .player .title {
-    color: #efefef;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
-    font-family: 'Lato Bold', arial, sans-serif;
+    color: #1366A6;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
     font-weight: bold;
-    font-size: 14px;
+    font-size: 24px;
+    font-family: 'OpenSansBold';
 }
 
 .ttw-music-player .artist-outer {
     color: #727272;
-    font-family: 'Lato Italic', arial, sans-serif;
     font-style: italic;
 }
 
 .ttw-music-player .artist {
     color: #999;
-    font-family: 'Lato', arial, sans-serif;
     margin-left: 4px;
 }
 
 .ttw-music-player .rating {
     width: 75px;
     height: 16px;
+    display: none;
 }
 
 .ttw-music-player .rating-star {
@@ -111,21 +117,15 @@
 
 /** Player **/
 .ttw-music-player .player-controls {
-    width: 215px;
     height: 30px;
-    border-radius: 6px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    background: transparent url(/img/player/player-bg.png) repeat 0 0 scroll;
-    float: left;
-    margin: 12px 0 0 30px;
+    display: block;
+    @include border-radius(6px);
+    margin: 12px 0 0 140px;
 }
 
 .ttw-music-player .player-controls .main {
     width: 52px;
     height: 12px;
-    margin: 9px 9px;
-    float: left;
 }
 
 .ttw-music-player .player-controls div {
@@ -134,37 +134,17 @@
     cursor: pointer;
 }
 
-.ttw-music-player .previous, .ttw-music-player .next {
+.ttw-music-player .previous, .ttw-music-player .next, .ttw-music-player .play, .ttw-music-player .pause {
     height: 10px;
     width: 15px;
-    margin: 1px 0;
+    margin: 1px 1px;
 }
 
-.ttw-music-player .play, .ttw-music-player .pause {
-    width: 8px;
-    height: 12px;
-    margin: 0 7px;
-}
 
-.ttw-music-player .previous {
-    background: transparent url(/img/player/player-previous.png) no-repeat center center scroll;
-}
-
-.ttw-music-player .next {
-    background: transparent url(/img/player/player-next.png) no-repeat center center scroll;
-}
-
-.ttw-music-player .play {
-    background: transparent url(/img/player/player-play.png) no-repeat center center scroll;
-}
-
-.ttw-music-player .pause {
-    background: transparent url(/img/player/player-pause.png) no-repeat center center scroll;
-}
 
 .ttw-music-player .progress-wrapper {
     height: 9px;
-    width: 135px;
+    width: 100%;
     float: left;
     background: transparent url(/img/player/player-progress.png) repeat-x 0 0 scroll;
     margin: 11px 10px 10px 0;
@@ -215,9 +195,9 @@
     border-radius: 6px;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
-    background: transparent url(/img/player/tracklist-bg.png) repeat 0 0 scroll;
-    color: #999;
-    font-size: 12px;
+    background: $color-4;
+    color: #fff;
+    font-size: 14px;
 }
 
 .ttw-music-player .tracklist ol {
@@ -249,25 +229,39 @@
 
 
 .ttw-music-player .tracklist .title {
-    width: 164px;
+    width: 60%;
     display: inline-block;
     padding: 0 0 0 14px;
     cursor: pointer;
+    font-size: 18px ;
+}
+.ttw-music-player .tracklist .title .artist {
+    display: block;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    color: #ddd;
 }
 
 .ttw-music-player li:nth-child(1n + 10) .title{
     padding-left:7px;
 }
-
+.ttw-music-player li {
+    @include text-shadow(none);
+}
 .ttw-music-player li.playing {
     color:#fff !important;
-
+    background: darken($color-4, 20%);
+    padding: 10px;
+    @include text-shadow(#000 0 2px 4px);
+    @include border-radius(6px);
 }
 
 .ttw-music-player .tracklist .rating {
     margin-left: 10px;
     width: 30px;
-    display: block;
+    display: none;
     position: absolute;
     right: 72px;
     top: 12.5px;
@@ -289,22 +283,20 @@
 }
 
 .ttw-music-player .buy {
-    width: 62px;
-    height: 16px;
+    width: 25%;
+    padding: 5px;
     display: inline-block;
     position: absolute;
     top: 9px;
     right: 0;
-    border-radius: 8px;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    background: transparent url(/img/player/buy-bg.png) repeat 0 0 scroll;
+    background: transparentize( darken($color-4, 20%), .8);
+    @include border-radius(6px);
     margin: 0 0 0 10px;
     font-size: 10px;
     text-align: center;
     line-height: 16px;
     text-shadow: none;
-    color: #999;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -318,7 +310,6 @@
 
 .ttw-music-player .more {
     display:none;
-    font-family: 'Lato Italic', arial, sans-serif;
     font-style: italic;
     font-size: 11px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .6);
@@ -343,6 +334,9 @@
     display:block;
 }
 
+.ttw-music-player .duration {
+    display: none;
+}
 
 /** Transitions **/
 .ttw-music-player .more,

@@ -4,6 +4,7 @@
 
 @import "compass";
 @import "cremalab-library";
+@import "bootstrap-icons";
 @import "player";
 
 
@@ -68,6 +69,7 @@ header {
 		margin-bottom: 20px;
 		overflow: visible !important;
 		.logo {
+			display: block;
 			width: 400px;
 			height: 180px;
 			margin: 50px 0 0;
@@ -87,7 +89,6 @@ header {
 	.details {
 		@include gridCol(7, last);
 		margin-bottom: 20px;
-		overflow: auto;
 		@media handheld, only screen and (max-width: 926px) {
 			display: block;
 			width: 100%;
@@ -751,5 +752,24 @@ ul.grid {
 		li {
 			width: 100%;
 		}
+	}
+}
+
+.main-content.sampler h2 {
+	margin-top: 1.3rem;
+}
+a.sampler-download {
+	display: block;
+	background: lighten($color-4, 40%);
+	padding: 10px;
+	text-align: center;
+	margin: 0 5px;
+	@include box-shadow(darken($color-4, 20%) -5px 6px 0);
+	i {
+		vertical-align: baseline;
+	}
+	&:hover {
+		background: lighten($color-4, 45%);
+		@include box-shadow(darken($color-4, 10%) -5px 6px 0);
 	}
 }

@@ -4,7 +4,8 @@ $ ->
       autoPlay: false
       description: description
       currencySymbol: "$"
-      buyText: "VIEW ALBUM"
+      buyText: "DOWNLOAD"
+      tracksToShow: 8
       jPlayer:
         swfPath: "/js"
 

@@ -48,6 +48,8 @@
 #   @which_fake_page = "Rendering a fake page with a variable"
 # end
 
+activate :directory_indexes
+
 ###
 # Helpers
 ###
@@ -81,11 +83,13 @@ configure :build do
   
   # Use relative URLs
   activate :relative_assets
+
+  activate :directory_indexes
   
   # Compress PNGs after build
   # First: gem install middleman-smusher
-  # require "middleman-smusher"
-  # activate :smusher
+  require "middleman-smusher"
+  activate :smusher
   
   # Or use a different image path
   # set :http_path, "/Content/images/"

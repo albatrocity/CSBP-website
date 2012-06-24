@@ -3,48 +3,65 @@
     "artist":"Spirit Is The Spirit",
     "title":"Pillows",
     "ogg":"http://whatisrossbrown.com/CSBP/Pillows.ogg",
-    "mp3":"http://whatisrossbrown.com/CSBP/Pillows.mp3",
-    "buy":"http://therecordmachine.net"
+    "mp3":"http://rossfil.es/2H2Y3R181o361h2Z3E2e/01%20Pillows.mp3",
+    "buy":"http://rossfil.es/2H2Y3R181o361h2Z3E2e/01%20Pillows.mp3",
+    "cover":"/img/sampler_cover_small.png"
   },
   {
     "artist":"The Caves",
     "title":"Liars",
     "ogg":"http://whatisrossbrown.com/CSBP/Liars.ogg",
-    "mp3":"http://whatisrossbrown.com/CSBP/Liars.mp3",
-    "buy":"http://thecaves.us"
+    "mp3":"http://rossfil.es/1P0d2G3p281F023L2T2V/02%20Liars.mp3",
+    "buy":"http://rossfil.es/1P0d2G3p281F023L2T2V/02%20Liars.mp3",
+    "cover":"/img/sampler_cover_small.png"
   },
+  {
+    "artist":"GHOSTY",
+    "title":"You Saved Me",
+    "ogg":"http://rossfil.es/3T292h1U3g0t0G0M0u0I/GHOSTY%20-%20GHOSTY%20-%2002%20YOU%20SAVED%20ME.ogg",
+    "mp3":"http://rossfil.es/3o2y0v3D3g142B1i0h2W/03%20You%20Saved%20Me.mp3",
+    "buy":"http://rossfil.es/3o2y0v3D3g142B1i0h2W/03%20You%20Saved%20Me.mp3",
+    "cover":"/img/sampler_cover_small.png"
+  },  
   {
     "artist":"Fullbloods",
     "title":"Candy",
     "ogg":"https://goldensoundrecords.com/catalog/the-perpetual-machine/tracks/1061/download.ogg",
-    "mp3":"https://goldensoundrecords.com/catalog/the-perpetual-machine/tracks/1061/download.mp3?kind=play",
-    "buy":"https://goldensoundrecords.com/catalog/the-perpetual-machine"
+    "mp3":"http://rossfil.es/1p2S3P1X2w1E1q3r2d0H/04%20Candy.mp3",
+    "buy":"http://rossfil.es/1p2S3P1X2w1E1q3r2d0H/04%20Candy.mp3",
+    "cover":"/img/sampler_cover_small.png"
   },
   {
     "artist":"Everyday/Everynight",
     "title":"Body Electric",
-    "ogg":"https://goldensoundrecords.com/catalog/the-perpetual-machine/tracks/1061/download.ogg",
-    "mp3":"https://goldensoundrecords.com/catalog/the-perpetual-machine/tracks/1061/download.mp3?kind=play",
-    "buy":"https://goldensoundrecords.com/catalog/the-perpetual-machine"
+    "ogg":"https://goldensoundrecords.com/catalog/etc/tracks/1571/download.ogg?kind=play",
+    "mp3":"http://rossfil.es/2I311x2b2C001F0t0Y3D/05%20Body%20Electric.mp3",
+    "buy":"http://rossfil.es/2I311x2b2C001F0t0Y3D/05%20Body%20Electric.mp3",
+    "cover":"/img/sampler_cover_small.png"
   },  
   {
     "artist":"Cowboy Indian Bear",
     "title":"Heart Be",
     "ogg":"http://whatisrossbrown.com/CSBP/Heart_Be.ogg",
-    "mp3":"http://whatisrossbrown.com/CSBP/Heart_Be.mp3",
-    "buy":"http://itunes.apple.com/us/album/heart-be/id370579321?i=370579342"
+    "mp3":"http://rossfil.es/3B3L3Y3R3W250Z3c0N2c/06%20Heart%20Be.mp3",
+    "buy":"http://rossfil.es/3B3L3Y3R3W250Z3c0N2c/06%20Heart%20Be.mp3",
+    "cover":"/img/sampler_cover_small.png"
   },
   {
     "artist":"The Empty Spaces",
     "title":"Holidays Are Nice and Warm",
     "ogg":"http://whatisrossbrown.com/CSBP/Holidays.ogg",
-    "mp3":"http://whatisrossbrown.com/CSBP/Holidays.mp3"
+    "mp3":"http://rossfil.es/053H3B2K1h10012N0r2q/07%20Holidays%20Are%20Nice%20and%20Warm.mp3",
+    "buy":"http://rossfil.es/053H3B2K1h10012N0r2q/07%20Holidays%20Are%20Nice%20and%20Warm.mp3",
+    "cover":"/img/sampler_cover_small.png"
   },
   {
     "artist":"Soft Reeds",
     "title":"Magic",
     "ogg":"http://whatisrossbrown.com/CSBP/Magic.ogg",
-    "mp3":"http://whatisrossbrown.com/CSBP/Magic.mp3"
+    "mp3":"http://rossfil.es/0M2H3J0y2J1T2r3i0B0W/08%20Magic.mp3",
+    "buy":"http://rossfil.es/0M2H3J0y2J1T2r3i0B0W/08%20Magic.mp3",
+    "cover":"/img/sampler_cover_small.png"
   }
 
 
