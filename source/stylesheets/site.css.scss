@@ -741,8 +741,14 @@ footer {
 ul.grid {
 	margin: 20px 0;
 	li {
-		width: 33%;
+		width: 32%;
 		@include inline-block;
 		list-style: none;
+		vertical-align: top;
+	}
+	@media handheld, only screen and (max-width: 500px) {
+		li {
+			width: 100%;
+		}
 	}
 }
