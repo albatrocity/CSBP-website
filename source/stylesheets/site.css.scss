@@ -283,7 +283,7 @@ header {
 
 }
 
-#schedule {
+#schedule, #food_trucks {
 
 	h2 {
 		font-family: 'OpenSansCondensedLight';
@@ -370,13 +370,15 @@ header {
 			height: 60px;
 			font-size: 24px;
 			cursor: pointer;
+			@include transition(all, .1s);
 			@media handheld, only screen and (max-width: 767px) {
 			    font-size: 18px;
 			 }
 			&:hover {
 				background: lighten(desaturate($color-4, 50), 55); 
 				margin: 0 -20px;
-				padding: 0 20px;
+				padding: 0 40px;
+				@include transition(all, .1s);
 			}
 			.name {
 				font-family: 'OpenSansBold';
@@ -403,6 +405,16 @@ header {
 			height: auto;
 			margin: 0 0 1em}
 		.band-link {}
+	}
+	.after-party {
+		.photo {
+			max-height: none;
+			text-align: center;
+			img {
+				margin-top: 20px;
+				width: 400px;
+			}
+		}
 	}
 
 }
@@ -726,3 +738,11 @@ footer {
 	}		
 }
 
+ul.grid {
+	margin: 20px 0;
+	li {
+		width: 33%;
+		@include inline-block;
+		list-style: none;
+	}
+}
