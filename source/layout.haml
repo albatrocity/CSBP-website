@@ -9,6 +9,7 @@
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
     = stylesheet_link_tag "site.css"
     %script{:charset => "utf-8", :src => "/js/site.js", :type => "text/javascript"}
+    = javascript_include_tag 'modernizr.custom.js'
     / %script{:charset => "utf-8", :src => "/js/css3-mediaqueries", :type => "text/javascript"}
     = yield_content :head
   %body{:class => page_classes}

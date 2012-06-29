@@ -533,7 +533,7 @@ header {
 				@include inline-block;
 				width: 20%;
 				margin: 0 2% 30px;
-				&.hammerpress, &.mpress, &.quintiles {
+				&.hammerpress, &.mpress, &.quintiles, &.tangledMane {
 					width: 30%;
 				}
 				&.barkley {
@@ -606,6 +606,10 @@ header {
 				&.pizzabella {
 					background-image: url('/img/sponsors/pizzabella.png');	
 					height: 50px;	
+				}
+				&.tangledMane {
+					background-image: url('/img/sponsors/tangled_mane.png');	
+					height: 20px;
 				}
 				background-repeat: no-repeat;
 				background-position: center;
