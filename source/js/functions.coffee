@@ -46,6 +46,16 @@ $ ->
       opacity: 1
 
 
+  unless $('html').hasClass('backgroundsize')
+    $('.sponsors li a, #logo-box .logo, .social a, #flamingos').each ->
+      imageProp = $(@).css('background-image')
+      image = imageProp.replace('url(', '').replace(')', '')
+      markup = "<img class='logo' src='#{image}' />"
+      $(@).css('background', 'none').append(markup)
+    $('.when, .where, .info').css('background', 'none')
+
+
+
 
 $.fn.spin = (opts) ->
   @each ->
