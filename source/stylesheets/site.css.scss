@@ -733,12 +733,17 @@ footer {
 			padding-top: 12px;
 			a.cremalab {
 				width: 110px;
-				height: 40px;
-				background: url('/img/sponsors/cremalab.png') no-repeat center;
+				height: 20px;
+				background-image: url('/img/sponsors/cremalab.png');
+				background-repeat: no-repeat;
+				background-position: center;
 				background-size: contain;
 				@include inline-block;
 				margin-left: .3em;
 				text-indent: -999em;
+				img {
+					display: block;
+				}
 			}
 		}
 	}
