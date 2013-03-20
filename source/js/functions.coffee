@@ -54,7 +54,7 @@ $ ->
       $(@).css('background', 'none').text('').append(markup)
     $('.when, .where, .info').css('background', 'none')
 
-
+  $(".content-header").fitVids()
 
 
 $.fn.spin = (opts) ->

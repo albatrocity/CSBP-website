@@ -4,4 +4,5 @@
 #= require "player"
 #= require "imagesloaded.min"
 #= require "spin.min"
+#= require "jquery.fitvids"
 #= require "functions"
