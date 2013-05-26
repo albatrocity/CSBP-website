@@ -775,10 +775,11 @@ footer {
 ul.grid {
 	margin: 20px 0;
 	li {
-		width: 32%;
+		width: 24%;
 		@include inline-block;
 		list-style: none;
 		vertical-align: top;
+		text-align: center;
 	}
 	@media handheld, only screen and (max-width: 500px) {
 		li {
