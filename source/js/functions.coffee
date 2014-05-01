@@ -26,11 +26,11 @@ $ ->
     if current.hasClass 'active'
       current.removeClass('active').find('.content-wrapper').css
         height: 0
-        opacity: 0   
+        opacity: 0
     else
       notCurrent.removeClass('active').find('.content-wrapper').css
         height: 0
-        opacity: 0      
+        opacity: 0
       current.addClass('loading active').append("<div id='loading'></div>")
       $('#loading').spin(spinOpts)
       if photo.find('img').attr('src') == undefined

@@ -59,7 +59,7 @@ header {
 	height: 260px;
 	@media handheld, only screen and (max-width: 500px) {
 		height: 330px;
-	}		
+	}
 	.row {
 		position: relative;
 		z-index: 10000;
@@ -105,7 +105,7 @@ header {
 			width: 100%;
 			padding: 0;
 			margin: 70px 0 0 0;
-		}		
+		}
 
 		ul {
 			float: right;
@@ -121,10 +121,10 @@ header {
 			@media handheld, only screen and (max-width: 500px) {
 				width: 100%;
 				padding: 20px 0 0 0;
-			}			
+			}
 		}
-		
-		li { 
+
+		li {
 			margin: 0 40px 0 0;
 			white-space: nowrap;
 			@include inline-block;
@@ -143,12 +143,12 @@ header {
 			margin: 10px 40px 42px 0;
 			background-image: url("/img/free.png");
 			background-repeat: no-repeat;
-			background-position: right center;	
+			background-position: right center;
 			@media handheld, only screen and (max-width: 926px) {
 				margin: 0 40px 0 0;
 				background-image: url("/img/free-red.png");
 				background-repeat: no-repeat;
-				background-position: right center;					
+				background-position: right center;
 			}
 		}
 		.when {
@@ -157,17 +157,17 @@ header {
 			margin: 20px 40px 42px 0;
 			background-image: url("/img/when.png");
 			background-repeat: no-repeat;
-			background-position: 0 center;	
+			background-position: 0 center;
 			@media handheld, only screen and (max-width: 926px) {
 				background-image: url("/img/when-red.png");
 				background-repeat: no-repeat;
-				background-position: 0 center;					
+				background-position: 0 center;
 				color: $color-2;
 				margin: 20px 40px 10px 0;
 			}
 			@media handheld, only screen and (max-width: 500px) {
 				width: 160px;
-			}			
+			}
 		}
 		.where {
 			width: 160px;
@@ -176,11 +176,11 @@ header {
 			margin: 20px 40px 42px 0;
 			background-image: url("/img/where.png");
 			background-repeat: no-repeat;
-			background-position: 0 center;				
+			background-position: 0 center;
 			@media handheld, only screen and (max-width: 926px) {
 				background-image: url("/img/where-red.png");
 				background-repeat: no-repeat;
-				background-position: 0 center;					
+				background-position: 0 center;
 				color: $color-2;
 				margin: 20px 20px 10px 0;
 			}
@@ -188,7 +188,7 @@ header {
 				width: 160px;
 				padding-left: 60px;
 				background-position: 8px center;
-			}				
+			}
 		}
 	}
 	.social {
@@ -223,12 +223,12 @@ header {
 			&.twitter {
 				background-image: url("/img/twitter.png");
 				background-repeat: no-repeat;
-				background-position: center;					
+				background-position: center;
 			}
 			&.facebook {
 				background-image: url("/img/facebook.png");
 				background-repeat: no-repeat;
-				background-position: center;					
+				background-position: center;
 			}
 			img.logo {
 				display: block;
@@ -256,7 +256,7 @@ header {
 		height: 270px;
 		background-image: url("/img/bg_headerMask.png");
 		background-repeat: repeat-x;
-		background-position: 50% 160px;	
+		background-position: 50% 160px;
 		min-width: 1160px;
 		padding-left: 20px;
 		@media handheld, only screen and (max-width: 767px) {
@@ -264,7 +264,7 @@ header {
 			padding-left: 0;
 			background-image: url("/img/bg_headerMask_mobile.png");
 			background-repeat: repeat-x;
-			background-position: center 160px;				
+			background-position: center 160px;
 		}
 	}
 }
@@ -291,7 +291,7 @@ header {
 		text-shadow: 2px 2px 0 #fff, 4px 4px 0 #D5DCE1 ;
 		@media handheld, only screen and (max-width: 500px) {
 			text-align: center;
-		}			
+		}
 	}
 
 }
@@ -317,7 +317,7 @@ header {
 			float: left;
 			background-image: url('/img/bg_ribbon-left.png');
 			background-repeat: no-repeat;
-			background-position: 0 0;				
+			background-position: 0 0;
 			background-size: contain;
 		}
 
@@ -330,7 +330,7 @@ header {
 			float: right;
 			background-image: url('/img/bg_ribbon-right.png');
 			background-repeat: no-repeat;
-			background-position: 0 0 ;				
+			background-position: 0 0 ;
 			background-size: contain;
 		}
 	}
@@ -374,8 +374,8 @@ header {
 				max-height: 440px;
 			}
 		}
-		&.clicked {	
-			height: auto;		
+		&.clicked {
+			height: auto;
 		}
 		.name-time {
 			overflow: hidden;
@@ -388,7 +388,7 @@ header {
 			    font-size: 18px;
 			 }
 			&:hover {
-				background: lighten(desaturate($color-4, 50), 55); 
+				background: lighten(desaturate($color-4, 50), 55);
 				margin: 0 -20px;
 				padding: 0 40px;
 				@include transition(all, .1s);
@@ -404,13 +404,13 @@ header {
 				}
 
 			}
-			.time { 
+			.time {
 				float: right;
 				font-family: 'OpenSansItalic';
 
 				@media handheld, only screen and (max-width: 767px) {
 					font-size: .8em;
-				}				
+				}
 			}
 		}
 		img {
@@ -451,7 +451,7 @@ header {
 	ul {
 		list-style: none;
 		overflow: hidden;
-		
+
 		.large {
 			overflow: hidden;
 			text-align: center;
@@ -462,10 +462,6 @@ header {
 				margin: 0 5% 1em;
 				&.boveri {
 					width: 18%;
-				}
-				&.globalPrairie {
-					width: 44%;
-					margin: 0 3% 1em 3%;
 				}
 			}
 			a {
@@ -495,7 +491,7 @@ header {
 					background-image: url('/img/sponsors/pitch.png');
 				}
 				&.moBank {
-					width: 100%;
+					width: 115%;
 					height: 75px;
 					background-image: url('/img/sponsors/mo_bank.png');
 				}
@@ -511,7 +507,7 @@ header {
 					background-image: url('/img/sponsors/boveri.png');
 				}
 				&.boulevard {
-					width: 120%;
+					width: 100%;
 					height: 85px;
 					background-image: url('/img/sponsors/boulevard.png');
 				}
@@ -547,7 +543,7 @@ header {
 				@include inline-block;
 				width: 20%;
 				margin: 0 2% 30px;
-				&.hammerpress, &.mpress, &.quintiles, &.tangledMane {
+				&.mpress, &.quintiles, &.tangledMane {
 					width: 30%;
 				}
 				&.barkley {
@@ -557,76 +553,42 @@ header {
 			a {
 				display: block;
 				background-size: contain;
-				&.thinkKc {
-					height: 70px;
-					background-image: url('/img/sponsors/think_kc.png');
-				}
-				&.elementOfGreen {
-					height: 70px;
-					background-image: url('/img/sponsors/elements_of_green.png');
-				}
-				&.recordMachine {
-					height: 70px;
-					background-image: url('/img/sponsors/the_record_machine.png');
-				}
-				&.sporting {
-					height: 70px;
-					background-image: url('/img/sponsors/sporting_kc.png');
-				}
 				&.candc {
 					height: 50px;
 					background-image: url('/img/sponsors/c_and_c.png');
 				}
 				&.t2 {
 					height: 70px;
-					background-image: url('/img/sponsors/t2.png');	
+					background-image: url('/img/sponsors/t2.png');
 				}
 				&.mmf {
 					height: 60px;
-					background-image: url('/img/sponsors/mmf.png');	
+					background-image: url('/img/sponsors/mmf.png');
 				}
-				&.hammerpress {
-					height: 60px;
-					width: 100%;
-					max-width: 150px;
-					background-image: url('/img/sponsors/hammerpress.png');	
-				}		
 				&.mpress {
 					height: 60px;
 					width: 100%;
 					max-width: 150px;
-					background-image: url('/img/sponsors/mpress.png');	
-				}		
-				&.pieroguys {
-					background-image: url('/img/sponsors/pieroguys.png');	
-					height: 60px;
+					background-image: url('/img/sponsors/mpress.png');
 				}
 				&.seen {
 					background-image: url('/img/sponsors/seen.png');
 					height: 60px;
 				}
 				&.barkley {
-					background-image: url('/img/sponsors/barkley.png');	
+					background-image: url('/img/sponsors/barkley.png');
 					height: 65px;
 				}
 				&.quintiles {
-					background-image: url('/img/sponsors/quintiles.png');	
+					background-image: url('/img/sponsors/quintiles.png');
 					height: 30px;
 				}
-				&.thinkContracting {
-					background-image: url('/img/sponsors/think.png');
+				&.pizzabella {
+					background-image: url('/img/sponsors/pizzabella.png');
 					height: 50px;
 				}
-				&.websterHouse {
-					background-image: url('/img/sponsors/webster_house.png');	
-					height: 40px;
-				}
-				&.pizzabella {
-					background-image: url('/img/sponsors/pizzabella.png');	
-					height: 50px;	
-				}
 				&.tangledMane {
-					background-image: url('/img/sponsors/tangled_mane.png');	
+					background-image: url('/img/sponsors/tangled_mane.png');
 					height: 20px;
 				}
 				background-repeat: no-repeat;
@@ -643,7 +605,7 @@ header {
 			max-height: 60px;
 			vertical-align: middle;
 		}
-	
+
 	}
 }
 
@@ -659,13 +621,13 @@ aside.extra-info {
 	}
 	@media handheld, only screen and (max-width: 500px) {
 		display: none;
-	}		
+	}
 }
 
 footer {
 	background: $color-3 url("/img/bg_crisscross.png") repeat;
 	position: relative;
-	
+
 	#flamingos {
 		background-size: contain;
 		width: 300px;
@@ -678,7 +640,7 @@ footer {
 		@media handheld, only screen and (max-width: 767px) {
 			width: 260px;
 			height: 142px;
-		}			
+		}
 	}
 	.details {
 		@include gridCol(12, last);
@@ -688,8 +650,8 @@ footer {
 		color: $color-6;
 		white-space: nowrap;
 		overflow: hidden;
-		
-		li { 
+
+		li {
 			margin-right: 40px;
 			white-space: nowrap;
 			float: left;
@@ -705,7 +667,7 @@ footer {
 			@include dimens(103px, 62px);
 			background-image: url("/img/free-green.png");
 			background-position: no-repeat right center;
-			
+
 		}
 		.when {
 			height: 40px;
@@ -719,14 +681,14 @@ footer {
 			padding: 0 0 0 40px;
 			background-image: url("/img/where-green.png");
 			background-repeat: no-repeat;
-			background-position: 0 center;			
+			background-position: 0 center;
 		}
 		.info {
 			height: 40px;
 			padding: 0 0 0 50px;
 			background-image: url("/img/info-green.png");
 			background-repeat: no-repeat;
-			background-position: 0 center;						
+			background-position: 0 center;
 			a {
 				color: $color-6;
 				&:hover {
@@ -769,7 +731,7 @@ footer {
 	margin-top: 90px;
 	@media handheld, only screen and (max-width: 767px) {
 		margin-top: 100px;
-	}		
+	}
 }
 
 ul.grid {
