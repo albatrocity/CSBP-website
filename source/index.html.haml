@@ -1,122 +1,79 @@
 - content_for :head do
   %title Crossroads Summer Block Party - Kansas City, Missouri
+/ .divider
 .main-content
-  .content-header
+  .row
+    .content-header
 
-    %h1.mega Howdy Neighbors!
+      %h1.mega Howdy Neighbors!
+      .grid
+        .col
+          :markdown
+            Join us June 5th for the Crossroads Summer Block Party presented by [Golden Sound Records](https://goldensoundrecords.com) and [The Pitch](http://www.pitch.com)! Enjoy an evening of [live music](#schedule) from some of the best bands in town, tasty brews, curated art, and friendly neighbors.
 
-    :markdown
-      Join us June 6th for the Crossroads Summer Block Party presented by [Golden Sound Records](https://goldensoundrecords.com) and [The Pitch](http://www.pitch.com)! Enjoy an evening of [live music](#schedule) from some of the best bands in town, tasty treats from [food trucks](#food_trucks), live art, and friendly neighbors.
+            Bring your friends &amp; family to the First Fridays event of 2015 and discover a taste of what makes Kansas City and the Crossroads Arts District one-of-a-kind.
+        .col.center= image_tag 'ill/flamingo.svg', id: 'flamingo_main'
 
-      Bring your friends &amp; family to the First Fridays event of 2014 and discover a taste of what makes Kansas City and the Crossroads Arts District one-of-a-kind.
-
-    %h4
-      %a.sampler-download{:href => 'sampler'}
-        %i.icon-music
-        Download the Crossroads Summer Block Party 2013 Sampler
-        %i.icon-music
-
-  #schedule
-    %h2 2014 Schedule
-    %ul#schedule-list
-      %li.band
-        .name-time
-          .name Jorge Arana Trio
-          .time 6:00 - 6:30
-        .content
-          .photo{:'data-src' => "/img/bands/jorge.jpg"}
-            %img.hidden
-          %p Jorge Arana trio is an avant-rock group from Kansas City, MO. Formed early 2011, it features members of  the defuct  immigrant-son/noise-rock band Pixel Panda. JAT released their debut album 'Mapache' 10/26/12, an urgent and dark convergence of rock, jazz, noise, classical, horror, video game, free-form, punk, and incidental musics. Enthusiastic reviews and eager listeners shortly followed. August 2013, the trio was  awarded 'Best Avant-Garde'  group by Kansas City's  Pitch Weekly. Nov 5th marked the release of a 7" split with experimental-rock group Ambulants, featuring the trio's first collaboration with violinist Chaski Zapata-Dye. A tour to the east followed and now the trio is back home at work on a new EP and LP for next year. Keep your ear to the ground.
-          %a.band-link{:href => "http://jorgearanatrio.com/", :target => "blank"} Website
-      %li.band
-        .name-time
-          .name Rev Gusto
-          .time 6:45 - 7:15
-        .content
-          .photo{:'data-src' => "img/bands/rev-gusto.jpg"}
-            %img.hidden
-          %p Rev Gusto is a lively garage pop band based out of Kansas City. Their tunes are written by frontman Jerry Frederick who studied songwriting techniques with the Kinks Ray Davies. The rest of the band includes, Shaun Crowley (guitar/trumpet), Sam Frederick (Bass), Peter Beatty (guitar/keyboard), and Quinn Hernandez (drums). This lineup has been going strong for two years. The bands solo release is a self-titled EP which was released in November 2012. Since then Rev Gusto has been gaining local recognition by getting aired on local radio stations and having the chance to open for national acts such as Matt &amp; Kim, The Mowgli's, and The Colourists. The band has also had success out of town including playing the Sony and Midcoast Takeover showcases at SXSW this year. In April of 2014 Rev Gusto put out their first physical release with a 7’ inch under <a href='http://toomuchrock.com'>Too Much Rock</a>.
-          %a.band-link{:href => "https://www.facebook.com/revgusto", :target => "blank"} Facebook
-      %li.band
-        .name-time
-          .name Mat Shoare
-          .time 7:30 - 8:00
-        .content
-          .photo{:'data-src' => "img/bands/mat-shoare.jpeg"}
-            %img.hidden
-          %p Mat Shoare has spent almost half of his 24 year long life writing and recording his own music. Much of this has taken place in several bedrooms and basements around Kansas City. Shoare prefers a homemade sound and feel to his recordings. Most of the music is centered around one of his favorite subjects, and one which he is a studied expert of: himself.
-          %a.band-link{:href => "http://matshoare.com", :target => "blank"} Website
-      %li.band
-        .name-time
-          .name La Guerre
-          .time 8:15 - 8:45
-        .content
-          .photo{:'data-src' => "img/bands/la-guerre.jpg"}
-            %img.hidden
-          %p La Guerre is the dark pop project of Cowboy Indian Bear’s Katlyn Conroy. “La Guerre” is french for “The War” and was taken from the title of a lengthy A Capella piece she sang in high school. Conroy is known for her chilling vocals, personal lyrical content, and emotional transparency on stage. A 2014 winner of a Kansas City Pitch Award for Best Female Singer/Songwriter, La Guerre frequently tours with numerous projects when not at home in Lawrence, Kansas.
-          %a.band-link{:href => "http://laguerremusic.tumblr.com", :target => "blank"} Website
-      %li.band
-        .name-time
-          .name Loose Park
-          .time 9:00 - 9:30
-        .content
-          .photo{:'data-src' => "img/bands/loose-park.jpg"}
-            %img.hidden
-          %p At 75-acres, Jacob L. Loose Park is one of Kansas City's most popular, beautiful and historical parks. At 17.5 feet end on end, LOOSE PARK is one of Kansas City's most popular, beautiful and historical bands. Been around the same musical blocks for years before uniting here, this band of a woman and a' two man play a sparklingblend of 70's metal and west coast shoegaze, elating by candlelight whatever the weather.
-          %a.band-link{:href => "https://www.facebook.com/LOOSEPARK", :target => "blank"} Facebook
-      %li.band
-        .name-time
-          .name The ACBs
-          .time 9:45 - 10:15
-        .content
-          .photo{:'data-src' => "img/bands/acbs.jpg"}
-            %img.hidden
-          %p ...So yes. Harmony. Dancing. Fun. Cool people that aren’t pretentious. Embracing your insecurities. Maybe sweating a little bit but not so much that it becomes gross for the other people in attendance. This is what the acb’s stand for. Please come see them (us).
-          %a.band-link{:href => "http://highdiverecords.com/index.php/the-acbs/", :target => "blank"} Website
-      %li.band
-        .name-time
-          .name Metatone
-          .time 10:30 - 11:00
-        .content
-          .photo{:'data-src' => "img/bands/metatone.jpg"}
-            %img.hidden
-          %p Metatone is a transmodern groove octet from K.row C.ity, USA. Their music is spiritual weaponry, only imagine swords being used at home for cooking instead of for warfare. Metatone's live shows summon strange yet simple delight, something Other.
-          %a.band-link{:href => "https://www.facebook.com/JaMetatone", :target => "blank"} Facebook
-      %li.band
-        .name-time
-          .name Forrester
-          .time 11:15 - 12:00
-        .content
-          .photo{:'data-src' => "/img/bands/forrester.jpg"}
-            %img.hidden
-          %p From the same family of experimental post-rock as Tortoise, Mogwai, and Deerhunter, comes Forrester, a five-piece guitar and sample factory from Lawrence, KS. Sprawling soundscapes, pulsing beats and frenetic energy bubble beneath the surface of Forrester’s sound, made by Brian Rogers, Joe Newman, Connor Creighton, Will Chertoff, and Steven LaCour. Currently, Forrester is promoting their debut EP, "Antithesis", while bringing their visceral and mesmerizing live show out to a solid fan base throughout the Midwest . Forrester’s brand of ambient electro-rock is about to be launched on a big scale. You’ll want to get on board with that. Meanwhile, Forrester is just trying really, really hard to save the world, one epic tune at a time.
-
-          %a.band-link{:href => "https://www.facebook.com/pages/Forrester/268901189820469", :target => "blank"} Facebook
-
-  #food_trucks
-    %h2 Food Trucks
-    %ul.grid
-      %li
-        %h3
-          %a{:href => 'http://www.indioscarbonsitos.com'} Indios Carbonistos
-      %li
-        %h3
-          %a{:href => 'https://www.facebook.com/pages/Wilmas-Real-Good-Food/182089678568174'} Wilma's Real Good Food
-      %li
-        %h3
-          %a{:href => 'http://www.jazzybmobile.com'} Jazzy B's
-      %li
-        %h3
-          %a{:href => 'https://twitter.com/NanisKitchen3'} Nani's Kitchen
-
-.sidebar
-  #twitter
-    %h3 The Tweets
-    = partial "twitter_feed"
-  .sponsors
-    %h3 Sponsors
-    %ul
+      %h4
+        %a.sampler-download{:href => 'http://cl.ly/1u3R162u3P0W?_ga=1.194254381.1053839808.1393730635'}
+          %i.icon-music
+          Download the Crossroads Summer Block Party 2014 Sampler
+          %i.icon-music
+  .divider.alt
+  .row
+    #schedule
+      %h2 2015 Music Schedule
+      .grid
+        .col.center= image_tag 'ill/tree.svg', id: 'tree_main'
+        .col.list
+          %ul#schedule-list
+            %li.band
+              .name-time
+                .name= link_to "My Brothers & Sisters", "http://jorgearanatrio.com/"
+                .time 6:00 - 6:30
+            %li.band
+              .name-time
+                .name= link_to "The Yeoman"
+                .time 6:45 - 7:15
+            %li.band
+              .name-time
+                .name The Phantastics
+                .time 7:30 - 8:00
+            %li.band
+              .name-time
+                .name Ghastly Menace
+                .time 8:15 - 8:45
+            %li.band
+              .name-time
+                .name Fullbloods
+                .time 9:00 - 9:30
+            %li.band
+              .name-time
+                .name Monta at Odds
+                .time 9:45 - 10:15
+            %li.band
+              .name-time
+                .name Your Friend
+                .time 10:30 - 11:00
+            %li.band
+              .name-time
+                .name Ill Phonics
+                .time 11:15 - 12:00
+  .divider
+  .row
+    #sponsors
+      %h2 Sponsors
+      %p Thanks to all the awesome neighborhood sponsors that help make the Crossroads Summer Block Party a reality!
       = partial "sponsors"
+
+  .sidebar
+    #twitter
+      %h3 The Tweets
+      = partial "twitter_feed"
+    .sponsors
+      %h3 Sponsors
+      %ul
+        = partial "sponsors"
 
 
 

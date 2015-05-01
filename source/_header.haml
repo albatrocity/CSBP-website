@@ -1,20 +1,14 @@
 %header
-  .row
-    #logo-box
-      %a.logo{:href => "/"}
-    .details
-      %ul
-        %li.free
-        %li.when
-          .top
-            %h3 June 6, 2014
-          .bottom 6:00 - MIDNIGHT
-        %li.where
-          .top
-            %h3 W 19th &amp; Wyandotte
-          .bottom Kansas City, MO
-    .social
-      = link_to '', 'https://www.facebook.com/KCblockparty', :class => 'facebook'
-      = link_to '', 'http://twitter.com/KCBlockParty', :class => 'twitter'
-#header-mask-box
-  #mask
+  .overlay
+    %img#logo{src: './img/csbp_2015.svg', alt: "Crossroads Summer Block Party 2015"}
+    .details-left
+      .when
+        %h2 June 6, 2014
+        %cite 6:00 - MIDNIGHT
+      .where
+        %h2 W 19th &amp; Wyandotte
+        %cite Crossroads District, Kansas City, MO
+      .social
+        = link_to '', 'https://www.facebook.com/KCblockparty', :class => 'facebook'
+        = link_to '', 'http://twitter.com/KCBlockParty', :class => 'twitter'
+  #header_carousel

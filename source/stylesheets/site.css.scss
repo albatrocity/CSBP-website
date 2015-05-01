@@ -1,767 +1,183 @@
-  //////////////////////////////////////////////
- //// IMPORTS /////////////////////////////////
-//////////////////////////////////////////////
+/*
+ *= require fadeshow/css/jquery.fadeshow-0.1.1.css
+*/
 
+@import "fonts";
+@import "typography";
+@import "schedule";
 @import "compass";
-@import "cremalab-library";
-@import "bootstrap-icons";
-@import "player";
+@import "sponsors";
 
+$color-1: #EE3F35; /*//Red */
+$color-2: #A52C25; /*//Dark Red */
+$color-3: #0FBB93; /*//Green */
+$color-4: #0F8FBB; /*//Blue */
+$color-5: #333333; /*//Black */
+$color-6: #064B3B; /*//Dark Green */
 
+$color-green: #C6E6C7;
+$color-red: #C7412E;
+$color-dk-green: #026431;
+$color-pink: #FF81E1;
 
+@import 'type';
 
-  //////////////////////////////////////////////
- //// COLORS //////////////////////////////////
-//////////////////////////////////////////////
-
-$color-1: #EE3F35; //Red
-$color-2: #A52C25; //Dark Red
-$color-3: #0FBB93; //Green
-$color-4: #0F8FBB; //Blue
-$color-5: #333333; //Black
-$color-6: #064B3B; //Dark Green
-
-
-
-
-  //////////////////////////////////////////////
- //// GRID TEMPLATES //////////////////////////
-//////////////////////////////////////////////
-
-header, #header-mask-box, section#main, footer {
-	@include gridTainer;
+html {
+  height: 100%;
 }
-
-.row {
-	@include gridRow;
-}
-
-
-
-  //////////////////////////////////////////////
- //// STYLES //////////////////////////////////
-//////////////////////////////////////////////
-
 body {
-	background: #fff url("/img/bg_fabric.png") repeat 50% 160px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-
-
-
-  //////////////////////////////////////////////
- //// HEADER //////////////////////////////////
-//////////////////////////////////////////////
-
 header {
-	position: relative;
-	background: $color-1 url("/img/bg_crisscross.png") repeat;
-	height: 260px;
-	@media handheld, only screen and (max-width: 500px) {
-		height: 330px;
-	}
-	.row {
-		position: relative;
-		z-index: 10000;
-	}
-	#logo-box {
-		@include gridCol(5);
-		margin-bottom: 20px;
-		overflow: visible !important;
-		.logo {
-			display: block;
-			width: 400px;
-			height: 180px;
-			margin: 50px 0 0;
-			background-image: url("/img/logo.png");
-			background-repeat: no-repeat;
-			background-position: 50px bottom;
-			overflow: visible;
-			background-size: contain;
-			@media handheld, only screen and (max-width: 767px) {
-				background: url("/img/logo.png") no-repeat center bottom;
-				margin: 50px auto 0;
-				padding: 0;
-				width: auto;
-				background-size: contain;
-			}
-			img.logo {
-				width: 320px;
-				margin-left: 47px;
-				background: none;
-			}
-		}
-	}
-	.details {
-		@include gridCol(7, last);
-		margin-bottom: 20px;
-		@media handheld, only screen and (max-width: 926px) {
-			display: block;
-			width: 100%;
-			white-space: normal;
-			text-align: center;
-		}
-		@media handheld, only screen and (max-width: 500px) {
-			width: 100%;
-			padding: 0;
-			margin: 70px 0 0 0;
-		}
-
-		ul {
-			float: right;
-			padding-top: 50px;
-			margin-bottom: 0;
-			list-style: none;
-			color: #fff;
-			white-space: nowrap;
-			@media handheld, only screen and (max-width: 926px) {
-				float: left;
-				white-space: normal;
-			}
-			@media handheld, only screen and (max-width: 500px) {
-				width: 100%;
-				padding: 20px 0 0 0;
-			}
-		}
-
-		li {
-			margin: 0 40px 0 0;
-			white-space: nowrap;
-			@include inline-block;
-			background-size: contain;
-			@media handheld, only screen and (max-width: 500px) {
-				display: block;
-				text-align: left;
-				margin: 25px auto !important;
-			}
-		}
-		h3 { margin: 6px 0 0; line-height: 16px; text-transform: uppercase;}
-		.bottom {font-family: 'OpenSansCondensedBold'}
-		.free {
-			width: 103px;
-			height: 62px;
-			margin: 10px 40px 42px 0;
-			background-image: url("/img/free.png");
-			background-repeat: no-repeat;
-			background-position: right center;
-			@media handheld, only screen and (max-width: 926px) {
-				margin: 0 40px 0 0;
-				background-image: url("/img/free-red.png");
-				background-repeat: no-repeat;
-				background-position: right center;
-			}
-		}
-		.when {
-			height: 40px;
-			padding: 0 0 0 60px;
-			margin: 20px 40px 42px 0;
-			background-image: url("/img/when.png");
-			background-repeat: no-repeat;
-			background-position: 0 center;
-			@media handheld, only screen and (max-width: 926px) {
-				background-image: url("/img/when-red.png");
-				background-repeat: no-repeat;
-				background-position: 0 center;
-				color: $color-2;
-				margin: 20px 40px 10px 0;
-			}
-			@media handheld, only screen and (max-width: 500px) {
-				width: 160px;
-			}
-		}
-		.where {
-			width: 160px;
-			height: 40px;
-			padding: 0 0 0 40px;
-			margin: 20px 40px 42px 0;
-			background-image: url("/img/where.png");
-			background-repeat: no-repeat;
-			background-position: 0 center;
-			@media handheld, only screen and (max-width: 926px) {
-				background-image: url("/img/where-red.png");
-				background-repeat: no-repeat;
-				background-position: 0 center;
-				color: $color-2;
-				margin: 20px 20px 10px 0;
-			}
-			@media handheld, only screen and (max-width: 500px) {
-				width: 160px;
-				padding-left: 60px;
-				background-position: 8px center;
-			}
-		}
-	}
-	.social {
-		z-index: 100;
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		width: 200px;
-		@media handheld, only screen and (max-width: 926px) {
-			position: relative;
-
-		}
-		// @media handheld, only screen and (max-width: 767px) {
-		// 	@include gridCol(12, last);
-		// 	padding-left: 20px;
-		// 	padding-right: 20px;
-
-		// }
-		@media handheld, only screen and (max-width: 767px) {
-			padding: 0;
-			width: 100%;
-			text-align: center;
-			height: 40px;
-			margin-bottom: 10px;
-		}
-		a {
-			@include inline-block;
-			@include dimens(82px, 40px);
-			@include hide-text;
-			margin-right: 10px;
-			background-size: contain;
-			&.twitter {
-				background-image: url("/img/twitter.png");
-				background-repeat: no-repeat;
-				background-position: center;
-			}
-			&.facebook {
-				background-image: url("/img/facebook.png");
-				background-repeat: no-repeat;
-				background-position: center;
-			}
-			img.logo {
-				display: block;
-				width: 100%;
-				height: 100%;
-			}
-		}
-	}
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  .overlay {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background: transparentize($color-green, .3);
+    height: 100%;
+    width: 100%;
+  }
+  #header_carousel {
+    height: 100%;
+    width: 100%;
+  }
+  .carousel {
+    min-height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
 }
 
-
-#header-mask-box {
-	position: relative;
-	height: 280px;
-	margin-top: -260px;
-	overflow: hidden;
-	padding: 0;
-	@media handheld, only screen and (max-width: 926px) {
-		margin-bottom: 9em;
-	}
-	@media handheld, only screen and (max-width: 525px) {
-		margin-bottom: 14em;
-	}
-	#mask {
-		height: 270px;
-		background-image: url("/img/bg_headerMask.png");
-		background-repeat: repeat-x;
-		background-position: 50% 160px;
-		min-width: 1160px;
-		padding-left: 20px;
-		@media handheld, only screen and (max-width: 767px) {
-			min-width: 0;
-			padding-left: 0;
-			background-image: url("/img/bg_headerMask_mobile.png");
-			background-repeat: repeat-x;
-			background-position: center 160px;
-		}
-	}
+#logo {
+  max-width: 70%;
+  margin: 1em auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
+#main {
+  padding: 4% 0;
+  .row {
+    overflow: hidden;
+  }
+}
 
+.free {
 
-  //////////////////////////////////////////////
- //// MAIN ////////////////////////////////////
-//////////////////////////////////////////////
+}
+.when, .where {
+  position: absolute;
+  text-align: center;
+  bottom: 8%;
+  width: 50%;
+  h2 {
+    margin-bottom: 0;
+  }
+}
+.when {
+  left: 5%;
+  text-align: left;
+}
+.where {
+  right: 5%;
+  text-align: right;
+}
 
-.main-content {
-	@include gridCol(8);
-	margin-bottom: 4em;
-	@media handheld, only screen and (max-width: 767px) {
-		margin-bottom: 4em;
-	}
+#main .row {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2em;
 }
 
 .content-header {
-	margin: 0 0 2em;
-	.mega {
-		font-family: 'OpenSansCondensedBold';
-		text-transform: uppercase;
-		text-shadow: 2px 2px 0 #fff, 4px 4px 0 #D5DCE1 ;
-		@media handheld, only screen and (max-width: 500px) {
-			text-align: center;
-		}
-	}
-
+  padding-bottom: 2em;
 }
 
-#schedule, #food_trucks {
-
-	h2 {
-		font-family: 'OpenSansCondensedLight';
-		text-align: center;
-		text-transform: uppercase;
-		line-height: 1.9em;
-		color: #fff;
-		background: $color-4;
-		height: 60px;
-		margin: 0 30px;
-
-		&:before {
-			content: '';
-			display: block;
-			width: 30px;
-			height: 60px;
-			margin: 0 0 0 -30px;
-			float: left;
-			background-image: url('/img/bg_ribbon-left.png');
-			background-repeat: no-repeat;
-			background-position: 0 0;
-			background-size: contain;
-		}
-
-		&:after {
-			content: '';
-			display: block;
-			width: 30px;
-			height: 60px;
-			margin: 0 -30px 0 0;
-			float: right;
-			background-image: url('/img/bg_ribbon-right.png');
-			background-repeat: no-repeat;
-			background-position: 0 0 ;
-			background-size: contain;
-		}
-	}
+.grid {
+  display: table;
+}
+.col {
+  display: table-cell;
+  vertical-align: middle;
+  &.center {
+    text-align: center;
+  }
 }
 
-#schedule-list {
-	list-style: none;
-	.band {
-		padding: 0;
-		border-bottom: 10px solid lighten(desaturate($color-4, 50), 50);
-		overflow: hidden;
-		position: relative;
-		&.loading {
-			color: transparentize(#000, .8);
-			@include transition(all, .4s);
-		}
-		#loading {
-			position: absolute;
-			margin: 10px auto;
-			z-index: 100;
-			height: 50px;
-			width: 50px;
-			top: -1%;
-			left: 48%;
-		}
-		.content-wrapper {
-			height: 0;
-			opacity: 0;
-			@include transition(all, .4s);
-		}
-		.content {
-			margin-bottom: 1em;
-		}
-		.photo {
-			max-height: 600px;
-			overflow: hidden;
-			margin-bottom: 10px;
-		}
-		&.soft-reeds {
-			.photo {
-				max-height: 440px;
-			}
-		}
-		&.clicked {
-			height: auto;
-		}
-		.name-time {
-			overflow: hidden;
-			line-height: 60px;
-			height: 60px;
-			font-size: 24px;
-			cursor: pointer;
-			@include transition(all, .1s);
-			@media handheld, only screen and (max-width: 767px) {
-			    font-size: 18px;
-			 }
-			&:hover {
-				background: lighten(desaturate($color-4, 50), 55);
-				margin: 0 -20px;
-				padding: 0 40px;
-				@include transition(all, .1s);
-			}
-			.name {
-				font-family: 'OpenSansBold';
-				display: block;
-				float: left;
-				text-transform: uppercase;
-
-				@media handheld, only screen and (max-width: 767px) {
-					font-size: 16px;
-				}
-
-			}
-			.time {
-				float: right;
-				font-family: 'OpenSansItalic';
-
-				@media handheld, only screen and (max-width: 767px) {
-					font-size: .8em;
-				}
-			}
-		}
-		img {
-			width: 100%;
-			height: auto;
-			margin: 0 0 1em}
-		.band-link {}
-	}
-	.after-party {
-		.photo {
-			max-height: none;
-			text-align: center;
-			img {
-				margin-top: 20px;
-				width: 400px;
-			}
-		}
-	}
-
+.main-content {
+  padding-top: 2%;
 }
 
-.sidebar {
-	@include gridCol(4, last);
-	margin-bottom: 4em;
-	@media handheld, only screen and (max-width: 767px) {
-		margin-bottom: 4em;
-	}
+#flamingo_main {
+  width: 80%;
+}
+#tree_main {
+  width: 70%;
 }
 
-.sponsors {
-	.text {
-		a {
-			@include inline-block;
-			padding: .4em;
-		}
-	}
-	ul li a img {max-height: 100%;}
-	ul {
-		list-style: none;
-		overflow: hidden;
-
-		.large {
-			overflow: hidden;
-			text-align: center;
-			margin-bottom: 20px;
-			li {
-				@include inline-block;
-				width: 39%;
-				margin: 0 5% 1em;
-				&.boveri {
-					width: 18%;
-				}
-				&.sprint {
-					width: 60%;
-				}
-			}
-			a {
-				&.goldenSound {
-					height: 80px;
-					background-image: url('/img/sponsors/golden_sound.png');
-				}
-				&.sprint {
-					height: 80px;
-					background-image: url('/img/sponsors/sprint_accelerator.png');
-				}
-				&.mildreds {
-					height: 110px;
-					background-image: url('/img/sponsors/mildreds.png');
-				}
-				&.thePitch {
-					width: 100%;
-					height: 54px;
-					margin: 0 0 10px;
-					float: right;
-					background-image: url('/img/sponsors/pitch.png');
-				}
-				&.moBank {
-					width: 115%;
-					height: 75px;
-					background-image: url('/img/sponsors/mo_bank.png');
-				}
-				&.bulldog {
-					height: 65px;
-					margin-top: 25px;
-					background-image: url('/img/sponsors/bulldog.png');
-				}
-				&.boveri {
-					width: 100%;
-					height: 170px;
-					margin-top: 35%;
-					background-image: url('/img/sponsors/boveri.png');
-				}
-				&.boulevard {
-					width: 100%;
-					height: 85px;
-					background-image: url('/img/sponsors/boulevard.png');
-				}
-				&.cremalab {
-					width: 120%;
-					height: 90px;
-					margin-left: -12px;
-					background-image: url('/img/sponsors/cremalab.png');
-				}
-				&.alcGroup {
-					width: 100%;
-					height: 50px;
-					margin-left: 10%;
-					background-image: url('/img/sponsors/alc_group.png');
-				}
-        &.snowCo {
-					width: 100%;
-					height: 60px;
-					margin: 12px 0 12px 8px;
-					background-image: url('/img/sponsors/snow_co.png');
-				}
-				display: block;
-				background-size: contain;
-				background-repeat: no-repeat;
-				background-position: center;
-			}
-		}
-
-		.small {
-			overflow: hidden;
-			text-align: center;
-			li {
-				@include inline-block;
-				width: 20%;
-				margin: 0 2% 30px;
-				&.mpress, &.quintiles, &.tangledMane {
-					width: 30%;
-				}
-				&.barkley {
-					width: 10%;
-				}
-			}
-			a {
-				display: block;
-				background-size: contain;
-				&.candc {
-					height: 50px;
-					background-image: url('/img/sponsors/c_and_c.png');
-				}
-				&.t2 {
-					height: 70px;
-					background-image: url('/img/sponsors/t2.png');
-				}
-				&.mmf {
-					height: 60px;
-					background-image: url('/img/sponsors/mmf.png');
-				}
-				&.mpress {
-					height: 60px;
-					width: 100%;
-					max-width: 150px;
-					background-image: url('/img/sponsors/mpress.png');
-				}
-				&.seen {
-					background-image: url('/img/sponsors/seen.png');
-					height: 60px;
-				}
-				&.barkley {
-					background-image: url('/img/sponsors/barkley.png');
-					height: 65px;
-				}
-				&.quintiles {
-					background-image: url('/img/sponsors/quintiles.png');
-					height: 30px;
-				}
-				&.pizzabella {
-					background-image: url('/img/sponsors/pizzabella.png');
-					height: 50px;
-				}
-				&.tangledMane {
-					background-image: url('/img/sponsors/tangled_mane.png');
-					height: 20px;
-				}
-				background-repeat: no-repeat;
-				background-position: center;
-			}
-		}
-
-		a {
-			display: block;
-			line-height: 60px;
-		}
-		img {
-			margin: 0 auto;
-			max-height: 60px;
-			vertical-align: middle;
-		}
-
-	}
+@media (max-width: 600px) {
+  .col {
+    display: block;
+  }
+  #tree_main, #flamingo_main {
+    width: 40%;
+    padding: 1em 0;
+  }
 }
 
-aside.extra-info {
-	@include gridCol(4);
-	float: right;
-	padding: 20px;
-	background: lighten(desaturate($color-4, 50), 55);
-	margin: 0 0 0 20px;
-	p:last-child {
-		margin-bottom: 0;
-		font-family: 'OpenSansLightItalic';
-	}
-	@media handheld, only screen and (max-width: 500px) {
-		display: none;
-	}
+
+ul#schedule-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-footer {
-	background: $color-3 url("/img/bg_crisscross.png") repeat;
-	position: relative;
 
-	#flamingos {
-		background-size: contain;
-		width: 300px;
-		height: 164px;
-		position: absolute;
-		top: -150px;
-		right: 30px;
-		background-image: url("/img/flamingos.png");
-		background-repeat: no-repeat;
-		@media handheld, only screen and (max-width: 767px) {
-			width: 260px;
-			height: 142px;
-		}
-	}
-	.details {
-		@include gridCol(12, last);
-		padding: 50px 0;
-		margin-bottom: 0;
-		list-style: none;
-		color: $color-6;
-		white-space: nowrap;
-		overflow: hidden;
 
-		li {
-			margin-right: 40px;
-			white-space: nowrap;
-			float: left;
-			background-size: contain;
-			&:last-child {margin: 0;}
-			@media handheld, only screen and (max-width: 767px) {
-				margin: 0 40px 40px 0
-			}
-		}
-		h3 { margin: 6px 0 0; line-height: 16px; text-transform: uppercase;}
-		.bottom {font-family: 'OpenSansCondensedBold'}
-		.free {
-			@include dimens(103px, 62px);
-			background-image: url("/img/free-green.png");
-			background-position: no-repeat right center;
-
-		}
-		.when {
-			height: 40px;
-			padding: 0 0 0 60px;
-			background-image: url("/img/when-green.png");
-			background-repeat: no-repeat;
-			background-position: left center;
-		}
-		.where {
-			height: 40px;
-			padding: 0 0 0 40px;
-			background-image: url("/img/where-green.png");
-			background-repeat: no-repeat;
-			background-position: 0 center;
-		}
-		.info {
-			height: 40px;
-			padding: 0 0 0 50px;
-			background-image: url("/img/info-green.png");
-			background-repeat: no-repeat;
-			background-position: 0 center;
-			a {
-				color: $color-6;
-				&:hover {
-					text-decoration: underline;
-				}
-			}
-		}
-		.credits {
-			font-size: 12px;
-			padding-top: 12px;
-			a.cremalab {
-				width: 110px;
-				height: 20px;
-				background-image: url('/img/sponsors/cremalab.svg');
-				background-repeat: no-repeat;
-				background-position: center;
-				background-size: contain;
-				@include inline-block;
-				margin-left: .3em;
-				text-indent: -999em;
-				img {
-					display: block;
-				}
-			}
-		}
-	}
-
-	.sponsors {
-		ul {
-			@include gridCol(12, last);
-		}
-	}
-
+.divider {
+  background: url('../img/ill/divider.svg');
+  background-size: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 6%;
+  width: 100%;
+  position: absolute;
+  margin-top: -7%;
+  z-index: 15;
+  &.alt {
+    height: 7%;
+    background-image: url('../img/ill/divider2.svg');
+    margin-top: -2%;
+  }
 }
 
-#footer-topBorder {
-	height: 15px;
-	background: url("/img/bg_grassTooth.png") repeat-x;
-	background-size: contain;
-	margin-top: 90px;
-	@media handheld, only screen and (max-width: 767px) {
-		margin-top: 100px;
-	}
+#sponsors {
+  display: table;
+  .large, .small {display: table-row;}
+}
+#sponsors .col {
+  display: inline-block;
+  width: 10%;
+  img {
+    width: 100%;
+  }
+  a {
+    display: block;
+  }
 }
 
-ul.grid {
-	margin: 20px 0;
-	li {
-		width: 24%;
-		@include inline-block;
-		list-style: none;
-		vertical-align: top;
-		text-align: center;
-	}
-	@media handheld, only screen and (max-width: 500px) {
-		li {
-			width: 100%;
-		}
-	}
-}
-
-.main-content.sampler h2 {
-	margin-top: 1.3rem;
-}
-a.sampler-download {
-	display: block;
-	background: lighten($color-4, 40%);
-	padding: 10px;
-	text-align: center;
-	margin: 0 5px;
-	@include box-shadow(darken($color-4, 20%) -5px 6px 0);
-	i {
-		vertical-align: baseline;
-	}
-	&:hover {
-		background: lighten($color-4, 45%);
-		@include box-shadow(darken($color-4, 10%) -5px 6px 0);
-	}
+@media (max-width: 600px) {
+  #sponsors .col {
+    display: table-cell;
+  }
 }
