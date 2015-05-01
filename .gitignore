@@ -14,6 +14,5 @@ capybara-*.html
 **.orig
 rerun.txt
 .DS_Store
-profile
 pickle-email-*.html
 /build/*
