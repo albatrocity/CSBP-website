@@ -29,36 +29,36 @@
           %ul#schedule-list
             %li.band
               .name-time
-                .name= link_to "My Brothers & Sisters", "http://jorgearanatrio.com/"
+                .name= link_to "My Brothers & Sisters", "http://www.mybrothersandsistersmusic.com"
                 .time 6:00 - 6:30
             %li.band
               .name-time
-                .name= link_to "The Yeoman"
+                .name= link_to "The Yeomon", "#"
                 .time 6:45 - 7:15
             %li.band
               .name-time
-                .name The Phantastics
+                .name= link_to "The Phantastics", "https://sillygooserecords.wordpress.com/the-phantastics/"
                 .time 7:30 - 8:00
             %li.band
               .name-time
-                .name Ghastly Menace
+                .name= link_to "Ghastly Menace", "http://www.ghastlymenace.com"
                 .time 8:15 - 8:45
             %li.band
               .name-time
-                .name Fullbloods
+                .name= link_to "Fullbloods", "http://www.fullbloods.com"
                 .time 9:00 - 9:30
             %li.band
               .name-time
-                .name Monta at Odds
+                .name= link_to "Monta at Odds", "https://montaatodds.bandcamp.com"
                 .time 9:45 - 10:15
             %li.band
               .name-time
-                .name Your Friend
+                .name= link_to "Your Friend", "http://yourfriendtaryn.com"
                 .time 10:30 - 11:00
             %li.band
               .name-time
-                .name Ill Phonics
-                .time 11:15 - 12:00
+                .name= link_to "iLLPHONiCS", "http://www.illphonics.net/"
+                .time 11:15 - MIDNIGHT
   .divider
   .row
     #sponsors
@@ -66,15 +66,14 @@
       %p Thanks to all the awesome neighborhood sponsors that help make the Crossroads Summer Block Party a reality!
       = partial "sponsors"
 
-  .sidebar
-    #twitter
+  .row
+    #twitter.col
       %h3 The Tweets
       = partial "twitter_feed"
-    .sponsors
-      %h3 Sponsors
-      %ul
-        = partial "sponsors"
-
+    .col
+      %ul.social
+        %li= link_to 'Facebook', 'https://www.facebook.com/KCblockparty'
+        %li= link_to 'Twitter', 'http://twitter.com/KCBlockParty'
 
 
 

@@ -6,7 +6,6 @@
 @import "typography";
 @import "schedule";
 @import "compass";
-@import "sponsors";
 
 $color-1: #EE3F35; /*//Red */
 $color-2: #A52C25; /*//Dark Red */
@@ -54,19 +53,25 @@ header {
   }
 }
 
+.free-img {
+  max-width: 10%;
+  position: absolute;
+  text-align: center;
+  top: 5%;
+  left: 45%;
+}
+
 #logo {
   max-width: 70%;
   margin: 1em auto;
   display: block;
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  margin-top: -23%;
 }
 
 #main {
-  padding: 4% 0;
+  padding: 1% 0 4% 0;
   .row {
     overflow: hidden;
   }
@@ -162,22 +167,120 @@ ul#schedule-list {
 }
 
 #sponsors {
-  display: table;
-  .large, .small {display: table-row;}
-}
-#sponsors .col {
-  display: inline-block;
-  width: 10%;
-  img {
-    width: 100%;
+  .large, .small, .text {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding: 2em 0;
   }
+  .text {text-align: center}
+  .sponsor {
+    @include inline-block;
+    padding: .5em;
+    img {width: 100%;}
+  }
+  .large .sponsor {
+    max-width: 120px;
+    &.wide {
+      max-width: 140px;
+    }
+    &.superwide {
+      max-width: 170px;
+    }
+  }
+  .small .sponsor {
+    max-width: 80px;
+    &.wide {
+      max-width: 100px;
+    }
+    &.superwide {
+      max-width: 120px;
+    }
+  }
+  .text .sponsor {
+    padding: 0 .4em;
+  }
+
+}
+/*#sponsors .col {
+  @include inline-block;
+  max-width: 10%;
   a {
     display: block;
   }
+}*/
+
+.social {
+  list-style: none;
+
 }
 
 @media (max-width: 600px) {
+  .mega {
+    font-size: 220%;
+  }
   #sponsors .col {
     display: table-cell;
+  }
+
+  #grill_main {
+    right: 10%;
+  }
+  .free-img {
+    top: 15%;
+  }
+  .when, .where {
+    h2 {
+      font-size: 120%;
+    }
+  }
+}
+
+
+
+
+footer {
+  background: $color-green url("/img/bg_crisscross.png") repeat;
+  position: relative;
+  padding-bottom: 4em;
+
+  #grill_main {
+    max-width: 20%;
+    position: absolute;
+    margin-top: -15%;
+    right: 4%;
+  }
+
+  .details {
+    padding: 50px 0;
+    margin-bottom: 0;
+    list-style: none;
+    color: $color-6;
+    white-space: nowrap;
+    overflow: hidden;
+
+    li {
+      margin-right: 40px;
+      white-space: nowrap;
+      float: left;
+      background-size: contain;
+      &:last-child {margin: 0;}
+      @media handheld, only screen and (max-width: 767px) {
+        margin: 0 40px 40px 0
+      }
+    }
+    h3 { margin: 6px 0 0; line-height: 16px; text-transform: uppercase;}
+    .bottom {font-family: 'OpenSansCondensedBold'}
+  }
+
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+and (orientation : portrait)
+  {
+  #logo {
+    top: 4%;
+    position: relative;
   }
 }
