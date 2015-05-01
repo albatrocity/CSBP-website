@@ -70,7 +70,7 @@ sprockets.import_asset 'fadeshow'
 # Change the JS directory
 set :js_dir, "js"
 
-set :build_dir, "tmp"
+set :build_dir, "build"
 
 
 # Change the images directory
