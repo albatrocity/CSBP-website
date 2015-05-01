@@ -1,31 +1,37 @@
 .large
-  %li
-    %a.goldenSound{:href => "https://goldensoundrecords.com/"}
-  %li
-    %a.thePitch{:href => "http://www.pitch.com/"}
-  %li.sprint
-    %a.sprint{:href => "http://sprintaccelerator.com"}
-  %li.boulevard
-    %a.boulevard{:href => "http://www.boulevard.com"}
-  %li.moBank
-    %a.moBank{:href => "http://www.mobank.com"}
-  %li.mildreds
-    %a.mildreds{:href => "http://www.mildredscoffeehouse.com"}
-  %li.cremalab
-    %a.cremalab{:href => "http://cremalab.com"}
-  %li.boveri
-    %a.boveri{:href => "http://boverirealty.com"}
-  %li.snowCo
-    %a.snowCo{:href => "http://www.snowandcompany.com/"}
-  %li.alcGroup
+  .sponsor
+    %a{:href => "https://goldensoundrecords.com/"}
+      = image_tag '/img/sponsors/golden_sound.png'
+  .sponsor
+    %a{:href => "http://www.pitch.com/"}
+      = image_tag '/img/sponsors/pitch.png'
+  .sponsor.wide
+    %a{:href => "http://www.boulevard.com"}
+      = image_tag '/img/sponsors/boulevard.png'
+  .sponsor.superwide
+    %a{:href => "http://www.mobank.com"}
+      = image_tag '/img/sponsors/mo_bank.png'
+  .sponsor
+    %a{:href => "http://www.mildredscoffeehouse.com"}
+      = image_tag '/img/sponsors/mildreds.png'
+  / .col.boveri
+  /   %a.boveri{:href => "http://boverirealty.com"}
+  / .col.alcGroup
 .small
-  %li.mpress
+  .sponsor
+    %a{:href => "http://cremalab.com"}
+      = image_tag '/img/sponsors/cremalab.png'
+  .sponsor
+    %a{:href => "http://www.snowandcompany.com/"}
+      = image_tag '/img/sponsors/snow_co.png'
 .text
-  %a{href: "http://www.ej4.com"} KC Street Car
-  %a{href: "http://www.barkleyus.com/"} Barkley
-  %a{href: "http://hinthint.tv"} Hint
-  %a{href: 'http://www.artlithocraft.com'} ALC Group
-  %a{href: 'http://www.mpresskc.com'} Mpress
-  %a{href: "http://www.ej4.com"} ej4
-  %a{href: "http://raygunsite.com"} Raygun
-  %a{href: "http://kccrossroads.org/members/tail-waggin-petstop-opening-spring-2014"} Tail Waggin' PetStop
+  %a.sponsor{href: "http://www.hooplastudio.com"} Hoopla
+  %a.sponsor{href: "http://www.therobertsonlawgroup.com"} Robertson Law Group
+  %a.sponsor{href: "http://www.kcstreetcar.org"} KC Streetcar
+  %a.sponsor{href: 'http://www.artlithocraft.com'} ALC Group
+  %a.sponsor{href: 'http://www.mpresskc.com'} Mpress
+  %a.sponsor{href: "http://www.ej4.com"} ej4
+  .sponsor
+    %small.sponsor Special thanks to Zach &amp; Gina Bickel
+  / %a{href: "http://raygunsite.com"} Raygun
+  / %a{href: "http://kccrossroads.org/members/tail-waggin-petstop-opening-spring-2014"} Tail Waggin' PetStop
