@@ -33,6 +33,7 @@ header {
   height: 100%;
   display: block;
   overflow: hidden;
+  position: relative;
   .overlay {
     position: absolute;
     z-index: 10;
