@@ -1,17 +1,19 @@
-.main-content.sampler
-  %h2 Crossroads Summer Block Party Sampler
-  %h4
-    Get a feel for what you'll be hearing on Friday, June 6th at the Crossroads Summer Block Party and enjoy these free tracks by local Kansas City artists.
+.main-content.sampler{name: "main"}
+  .row
+    %h2 Crossroads Summer Block Party Sampler
+    %h4
+      Get a feel for what you'll be hearing on Friday, June 5th at the Crossroads Summer Block Party and enjoy these free tracks by local Kansas City artists.
 
-  %h4
-    %a.sampler-download{:href => "http://cl.ly/1u3R162u3P0W?_ga=1.194254381.1053839808.1393730635"}
-      %i{:class => 'icon-download'}
-      Download the sampler (.zip file of mp3s)
+    %h4
+      %a.sampler-download{:href => "http://cl.ly/1u3R162u3P0W?_ga=1.194254381.1053839808.1393730635"}
+        %i{:class => 'icon-download'}
+        Download the sampler (.zip file of mp3s)
 
-  #music_player
+    #music_player
 
-.sidebar
-  .sponsors
-    %h3 Sponsors
-    %ul
+  .divider
+  .row
+    #sponsors
+      %h2 Sponsors
+      %p Thanks to all the awesome neighborhood sponsors that help make the Crossroads Summer Block Party a reality!
       = partial "sponsors"

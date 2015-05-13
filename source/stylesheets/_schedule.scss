@@ -1,6 +1,14 @@
 #schedule {
   .list {width: 50%;}
   padding-bottom: 10%;
+
+  h2 {
+    small {
+      font-size: 50%;
+      vertical-align: middle;
+      padding-left: 2em;
+    }
+  }
 }
 
 .band .name-time {

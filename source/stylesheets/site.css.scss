@@ -6,6 +6,7 @@
 @import "typography";
 @import "schedule";
 @import "compass";
+@import "player";
 
 $color-1: #EE3F35; /*//Red */
 $color-2: #A52C25; /*//Dark Red */
@@ -61,14 +62,16 @@ header {
   top: 5%;
   left: 45%;
 }
-
 #logo {
-  max-width: 70%;
-  margin: 1em auto;
   display: block;
   position: relative;
   top: 50%;
   margin-top: -23%;
+}
+#logo img {
+  display: block;
+  max-width: 70%;
+  margin: 1em auto;
 }
 
 #main {
@@ -106,7 +109,7 @@ header {
 }
 
 .content-header {
-  padding-bottom: 2em;
+  padding-bottom: 3em;
 }
 
 .grid {
@@ -177,7 +180,11 @@ ul#schedule-list {
   .sponsor {
     @include inline-block;
     padding: .5em;
-    img {width: 100%;}
+    img {
+      max-width: 100%;
+      max-height: 140px;
+    }
+    a {display: block}
   }
   .large .sponsor {
     max-width: 120px;
@@ -195,6 +202,9 @@ ul#schedule-list {
     }
     &.superwide {
       max-width: 120px;
+    }
+    &.megawide {
+      max-width: 165px;
     }
   }
   .text .sponsor {

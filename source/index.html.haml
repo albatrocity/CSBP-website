@@ -14,15 +14,18 @@
             Bring your friends &amp; family to the First Fridays event of 2015 and discover a taste of what makes Kansas City and the Crossroads Arts District one-of-a-kind.
         .col.center= image_tag 'ill/flamingo.svg', id: 'flamingo_main'
 
-      %h4
-        %a.sampler-download{:href => 'http://cl.ly/1u3R162u3P0W?_ga=1.194254381.1053839808.1393730635'}
-          %i.icon-music
-          Download the Crossroads Summer Block Party 2014 Sampler
-          %i.icon-music
+      %a.sampler-download{href: "/sampler#main"}
+        %i.icon-music
+        Check out the Crossroads Summer Block Party 2015 Music Sampler
+        %i.icon-music
   .divider.alt
   .row
     #schedule
-      %h2 2015 Music Schedule
+      %h2
+        2015 Music Schedule
+        %small
+          %i.icon-music
+          %a{href: '/sampler#main'} Download the Sampler
       .grid
         .col.center= image_tag 'ill/tree.svg', id: 'tree_main'
         .col.list
@@ -33,7 +36,7 @@
                 .time 6:00 - 6:30
             %li.band
               .name-time
-                .name= link_to "The Yeomon", "http://yeomon.bandcamp.com"
+                .name= link_to "Yeomon", "http://yeomon.bandcamp.com"
                 .time 6:45 - 7:15
             %li.band
               .name-time
@@ -59,6 +62,7 @@
               .name-time
                 .name= link_to "iLLPHONiCS", "http://www.illphonics.net/"
                 .time 11:15 - MIDNIGHT
+
   .divider
   .row
     #sponsors

@@ -1,4 +1,5 @@
 @import "compass";
+@import "bootstrap-icons";
 
 $color-1: #EE3F35; //Red
 $color-2: #A52C25; //Dark Red
@@ -9,7 +10,7 @@ $color-6: #064B3B; //Dark Green
 
 .ttw-music-player {
     width: 100%;
-    margin: 60px auto;
+    margin: 60px auto 20% auto;
     position: relative;
 }
 
@@ -24,9 +25,6 @@ $color-6: #064B3B; //Dark Green
     top: 0;
     // float: left;
     background: #333 url(/img/player/album-cover-bg.jpg) no-repeat 0 0 scroll;;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, .75);
-    -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, .75);
-    -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, .75);
 }
 
 .ttw-music-player .album-cover .img {
@@ -77,8 +75,7 @@ $color-6: #064B3B; //Dark Green
 }
 
 .ttw-music-player .player .title {
-    color: #1366A6;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+    color: $color-2;
     font-weight: bold;
     font-size: 24px;
     font-family: 'OpenSansBold';
@@ -90,7 +87,7 @@ $color-6: #064B3B; //Dark Green
 }
 
 .ttw-music-player .artist {
-    color: #999;
+    color: $color-2;
     margin-left: 4px;
 }
 
@@ -178,8 +175,7 @@ $color-6: #064B3B; //Dark Green
     clear: both;
     margin: 30px 0 0 0;
     font-size: 12px;
-    color: #999;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .6);
+    color: $color-6;
 }
 
 .ttw-music-player .description.showing{
@@ -189,14 +185,7 @@ $color-6: #064B3B; //Dark Green
 /** Track List **/
 .ttw-music-player .tracklist {
     padding: 10px 20px;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .15), 0 1px 0 rgba(255, 255, 255, .04);
-    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .15), 0 1px 0 rgba(255, 255, 255, .04);
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .15), 0 1px 0 rgba(255, 255, 255, .04);
-    border-radius: 6px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    background: $color-4;
-    color: #fff;
+    color: #333;
     font-size: 14px;
 }
 
@@ -207,15 +196,13 @@ $color-6: #064B3B; //Dark Green
 }
 
 .ttw-music-player .tracklist li {
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .6);
-    background: transparent url(/img/player/tracklist-item-bg.png) repeat-x bottom left scroll;
     padding: 10px 0 10px 0;
     list-style-position: inside;
     position: relative;
 }
 
 .ttw-music-player .tracklist li:hover {
-    color: #eee;
+    color: #111;
 }
 
 .ttw-music-player li:last-child{
@@ -241,7 +228,6 @@ $color-6: #064B3B; //Dark Green
     padding: 0;
     margin: 0;
     cursor: pointer;
-    color: #ddd;
 }
 
 .ttw-music-player li:nth-child(1n + 10) .title{
@@ -251,11 +237,12 @@ $color-6: #064B3B; //Dark Green
     @include text-shadow(none);
 }
 .ttw-music-player li.playing {
-    color:#fff !important;
-    background: darken($color-4, 20%);
-    padding: 10px;
-    @include text-shadow(#000 0 2px 4px);
-    @include border-radius(6px);
+    // background: $color-4;
+    font-size: 180%;
+    // padding: 10px;
+    line-height: 140%;
+    span.artist {font-size: 80% !important;}
+    span.title {font-size: 140% !important;}
 }
 
 .ttw-music-player .tracklist .rating {
@@ -273,13 +260,11 @@ $color-6: #064B3B; //Dark Green
     display: block;
     float: left;
     cursor: pointer;
-    background: transparent url(/img/player/rating-bar.png) no-repeat 0 0 scroll;
 }
 
 .ttw-music-player .rating-bar.on,
 .ttw-music-player .rating-bar:hover,
 .ttw-music-player .rating-bar.hover {
-    background: transparent url(/img/player/rating-bar-on.png) no-repeat 0 0 scroll;
 }
 
 .ttw-music-player .buy {
@@ -320,14 +305,10 @@ $color-6: #064B3B; //Dark Green
     border-radius: 6px;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
-    background: transparent url(/img/player/tracklist-more.png) repeat 0 0 scroll;
 }
 
 .ttw-music-player .more:hover {
     color: #eee;
-    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, .2);
-    -moz-box-shadow: inset 0px 0px 20px rgba(0, 0, 0, .2);
-    -webkit-box-shadow: inset 0px 0px 20px rgba(0, 0, 0, .2);
 }
 
 .ttw-music-player .show-more-button .more{
@@ -343,10 +324,10 @@ $color-6: #064B3B; //Dark Green
 .ttw-music-player .album-cover .highlight,
 .ttw-music-player .tracklist li,
 .ttw-music-player .buy {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 /* http://perishablepress.com/press/2009/12/06/new-clearfix-hack */

@@ -756,9 +756,10 @@ a.sampler-download {
 	padding: 10px;
 	text-align: center;
 	margin: 0 5px;
+	vertical-align: text-bottom;
 	@include box-shadow(darken($color-4, 20%) -5px 6px 0);
 	i {
-		vertical-align: baseline;
+		vertical-align: text-bottom;
 	}
 	&:hover {
 		background: lighten($color-4, 45%);

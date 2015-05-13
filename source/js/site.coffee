@@ -1,5 +1,8 @@
 #= require jquery/jquery.js
 #= require fadeshow/src/jquery.fadeshow-0.1.1.js
+#= require "jquery.jplayer"
+#= require "ttw-music-player"
+#= require "player"
 
 $ ->
   $("#header_carousel").fadeShow
