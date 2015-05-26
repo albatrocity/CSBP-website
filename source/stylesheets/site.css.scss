@@ -15,6 +15,7 @@ $color-4: #0F8FBB; /*//Blue */
 $color-5: #333333; /*//Black */
 $color-6: #064B3B; /*//Dark Green */
 
+$color-ltblue: #a4e0f6;
 $color-green: #C6E6C7;
 $color-red: #C7412E;
 $color-dk-green: #026431;
@@ -286,4 +287,10 @@ footer {
     .bottom {font-family: 'OpenSansCondensedBold'}
   }
 
+}
+
+a.button {
+  background: $color-ltblue;
+  padding: .6em 1em;
+  @include single-box-shadow(.3em, .3em, 0, 0, $color-4);
 }
