@@ -33,3 +33,23 @@
     width: auto;
   }
 }
+
+.low-pad {
+  margin-top: 1em;
+}
+.bottom-pad {
+  padding-bottom: 6em;
+}
+
+#makers, #food_trucks {
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline-block;
+    padding: 1em;
+  }
+}
+
+#food_trucks {
+  text-align: center;
+}
