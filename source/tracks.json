@@ -5,7 +5,7 @@
     "ogg":"https://s3-us-west-2.amazonaws.com/crossroads-block-party/ogg/01+Pillow+Bella.ogg",
     "mp3":"https://s3-us-west-2.amazonaws.com/crossroads-block-party/mp3/01+Pillow+Bella.mp3",
     "buy":"http://cl.ly/1r3B0h3U3f0a/download/01%20Pillow%20Bella.mp3",
-    "cover":"/img/CSBP2015sampler_small.jpg"
+    "cover":"/img/CSBP2016sampler_small.jpg"
   },
   {
     "artist":"Yeomon",
@@ -13,7 +13,7 @@
     "ogg":"https://s3-us-west-2.amazonaws.com/crossroads-block-party/ogg/02+Time+Saved.ogg",
     "mp3":"https://s3-us-west-2.amazonaws.com/crossroads-block-party/mp3/02+Time+Saved.mp3",
     "buy":"http://cl.ly/362I3V313109/download/02%20Time%20Saved.mp3",
-    "cover":"/img/CSBP2015sampler_small.jpg"
+    "cover":"/img/CSBP2016sampler_small.jpg"
   },
   {
     "artist":"Bananas",
@@ -21,7 +21,7 @@
     "ogg":"https://s3-us-west-2.amazonaws.com/crossroads-block-party/ogg/03+Bananas+(Radio+Edit).ogg",
     "mp3":"https://s3-us-west-2.amazonaws.com/crossroads-block-party/mp3/03+Bananas+(Radio+Edit).mp3",
     "buy":"http://cl.ly/2m432p2N0t43/download/03%20Bananas%20(Radio%20Edit).mp3",
-    "cover":"/img/CSBP2015sampler_small.jpg"
+    "cover":"/img/CSBP2016sampler_small.jpg"
   },
   {
     "artist":"Ghastly Menace",
@@ -29,7 +29,7 @@
     "ogg":"https://s3-us-west-2.amazonaws.com/crossroads-block-party/ogg/04+Closing.ogg",
     "mp3":"https://s3-us-west-2.amazonaws.com/crossroads-block-party/mp3/04+Closing.mp3",
     "buy":"http://cl.ly/221w0G2B3F0R/download/04%20Closing.mp3",
-    "cover":"/img/CSBP2015sampler_small.jpg"
+    "cover":"/img/CSBP2016sampler_small.jpg"
   },
   {
     "artist":"Organized Crimes",
@@ -37,7 +37,7 @@
     "ogg":"https://s3-us-west-2.amazonaws.com/crossroads-block-party/ogg/05+Game+Over+Song.ogg",
     "mp3":"https://s3-us-west-2.amazonaws.com/crossroads-block-party/mp3/05+Game+Over+Song.mp3",
     "buy":"http://cl.ly/0A0w1y3Y3O2o/download/05%20Game%20Over%20Song.mp3",
-    "cover":"/img/CSBP2015sampler_small.jpg"
+    "cover":"/img/CSBP2016sampler_small.jpg"
   },
   {
     "artist":"illPhonics",
@@ -45,7 +45,7 @@
     "ogg":"https://s3-us-west-2.amazonaws.com/crossroads-block-party/ogg/06+Sundown+(ft.+Tiffany+Elle+and+Glitch+Factor).ogg",
     "mp3":"https://s3-us-west-2.amazonaws.com/crossroads-block-party/mp3/06+Sundown+(ft.+Tiffany+Elle+and+Glitch+Factor).mp3",
     "buy":"http://cl.ly/1I0L1A271M35/download/06%20Sundown%20(ft.%20Tiffany%20Elle%20and%20Glitch%20Factor).mp3",
-    "cover":"/img/CSBP2015sampler_small.jpg"
+    "cover":"/img/CSBP2016sampler_small.jpg"
   },
   {
     "artist":"Monta at Odds",
@@ -53,7 +53,7 @@
     "ogg":"https://s3-us-west-2.amazonaws.com/crossroads-block-party/ogg/07+Make+Green+Grass+Greener+edit.ogg",
     "mp3":"https://s3-us-west-2.amazonaws.com/crossroads-block-party/mp3/07+Make+Green+Grass+Greener+edit.mp3",
     "buy":"http://cl.ly/0i0f1z1U3O0N/download/07%20Make%20Green%20Grass%20Greener%20edit.mp3",
-    "cover":"/img/CSBP2015sampler_small.jpg"
+    "cover":"/img/CSBP2016sampler_small.jpg"
   },
   {
     "artist":"Your Friend",
@@ -61,7 +61,7 @@
     "ogg":"https://s3-us-west-2.amazonaws.com/crossroads-block-party/ogg/08+Tame+One.ogg",
     "mp3":"https://s3-us-west-2.amazonaws.com/crossroads-block-party/mp3/08+Tame+One.mp3",
     "buy":"http://cl.ly/3H0R0B3J0F0J/download/08%20Tame%20One.mp3",
-    "cover":"/img/CSBP2015sampler_small.jpg"
+    "cover":"/img/CSBP2016sampler_small.jpg"
   }
 
 ]

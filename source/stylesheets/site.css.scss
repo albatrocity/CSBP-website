@@ -54,6 +54,12 @@ header {
     width: 100%;
     background-size: cover;
   }
+  #info-right {
+    width: 25%;
+    position: absolute;
+    right: 2%;
+    margin-top: 1%;
+  }
 }
 
 h2 del {
@@ -62,11 +68,10 @@ h2 del {
 }
 
 .free-img {
-  max-width: 10%;
-  position: absolute;
+  position: relative;
   text-align: center;
-  top: 5%;
-  left: 45%;
+  top: 15%;
+  margin: 0 auto;
 }
 #logo {
   display: block;
@@ -143,6 +148,32 @@ h2 del {
   width: 70%;
 }
 
+.big-mingo {
+  width: 40%;
+  margin: 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  margin-top: -10%;
+  top: 50%;
+}
+
+#speech_bubble {
+  background: url('/img/ill/speech_bubble.svg');
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  img {
+    display: block;
+    width: 20%;
+    margin: 7% auto;
+    position: relative;
+    left: 1%;
+  }
+}
+
 @media (max-width: 600px) {
   .col {
     display: block;
@@ -150,6 +181,15 @@ h2 del {
   #tree_main, #flamingo_main {
     width: 40%;
     padding: 1em 0;
+  }
+  #speech_bubble {
+    top: 13%;
+    width: 100%;
+    left: -15%;
+  }
+  .big-mingo {
+    width: 60%;
+    margin-top: -25%;
   }
 }
 
@@ -251,6 +291,11 @@ ul#schedule-list {
   .when, .where {
     h2 {
       font-size: 120%;
+    }
+  }
+  #info-right {
+    p {
+      font-size: 80%;
     }
   }
 }
