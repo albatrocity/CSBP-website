@@ -1,0 +1,46 @@
+.sponsors {
+  h4 {
+    text-align: center;
+  }
+  .large, .small, .text {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding: 2em 0;
+  }
+  .text {text-align: center}
+  .sponsor {
+    display: inline-block;
+    vertical-align: middle;
+    padding: .5em;
+    img {
+      max-width: 100%;
+      max-height: 140px;
+    }
+    a {display: block}
+  }
+  .large .sponsor {
+    max-width: 120px;
+    &.wide {
+      max-width: 140px;
+    }
+    &.superwide {
+      max-width: 170px;
+    }
+  }
+  .small .sponsor {
+    max-width: 80px;
+    &.wide {
+      max-width: 100px;
+    }
+    &.superwide {
+      max-width: 120px;
+    }
+    &.megawide {
+      max-width: 165px;
+    }
+  }
+  .text .sponsor {
+    padding: 0 .4em;
+  }
+
+}

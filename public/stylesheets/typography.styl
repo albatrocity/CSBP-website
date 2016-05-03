@@ -1,0 +1,153 @@
+@require "colors"
+@import "../fonts/league-gothic"
+
+font-family  = 'Alfa Slab One'
+font-size    = 24
+baseline     = 1rem
+font-color   = #333
+header-color = #333
+
+nav-link=#1366A6
+nav-hover= #1A8CE5
+
+html {
+  font-family:	font-family;
+  line-height:  font-size;
+  margin-bottom:  font-size;
+
+	font-size: 		font-size;
+	line-height:	baseline;
+	margin-bottom:	baseline;
+}
+
+body {
+  font-size:    24px;
+  font-family: 'Slabo 27px', serif;
+
+  line-height:  1.4rem;
+	color:   font-color;
+	// background: url("img/baseline-grid.png") 0 24px; /* === BASELINE GRID GUIDE === */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: color-black;
+}
+
+h1 {
+  font-family: 'League Gothic'
+  font-size:    3rem;
+  line-height:  3.5rem;
+  // margin:       2.00 * font-size 0 1.00 * font-size;
+  text-transform: uppercase;
+  color: color-red
+}
+
+#main_header h1 {
+  font-size:    4rem;
+  line-height:  4.5rem;
+  color: color-black
+}
+
+#main_header h2 span.red.fat-slab {
+  font-size: 1.2rem;
+  letter-spacing: -0.1rem;
+  vertical-align: middle;
+}
+
+#about {
+  text-align: center
+}
+
+h2 {
+  font-family: 'League Gothic'
+  font-size:    2rem;
+  line-height:  2.5rem;
+	color: color-gold
+  text-transform: uppercase;
+  margin: 2rem 0 0 0
+}
+
+sup {
+  text-transform: none
+  vertical-align: top
+}
+
+h3 {
+  font-family: 'League Gothic'
+	font-size:    1rem;
+  text-transform: uppercase;
+  margin: 0 .5rem
+}
+
+h4 {
+  font-family: 'League Gothic'
+	font-size:    1.5rem;
+}
+
+h5 {
+  font-family: 'League Gothic'
+	font-size:    0.66*font-size;
+  margin:       2.00*font-size 0 1.00*font-size;
+
+	font-size:		0.66*baseline;
+	margin:	    	2.00*baseline 0 1.00*baseline;
+}
+
+h6 {
+  font-family: 'League Gothic'
+	font-size:    0.50*font-size;
+  margin:       2.05*font-size 0 0.96*font-size;
+
+	font-size:		0.50*baseline;
+	margin:	    	2.05*baseline 0 0.96*baseline;
+}
+
+p,
+ul,
+ol 	{
+  margin-bottom: 1*font-size;
+  margin-bottom:	1*baseline;
+}
+
+ul {
+  list-style: disc;
+	list-style-position: inside;
+}
+
+ol {
+  list-style: alpha;
+	list-style-position: inside;
+}
+body, p {
+  color:   font-color;
+}
+blockquote {
+  font-family:  'OpenSansLightItalic';
+  padding:    0 2*baseline 0;
+}
+
+cite {
+  font-family: 	'OpenSansLightItalic';
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  &:link, &:visited {
+    color: nav-link;
+  }
+  &:hover, &:active {
+    color: nav-hover;
+  }
+}
+strong, em {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+
+.fat-slab {
+  font-family: 'Alfa Slab One', sans-serif;
+}

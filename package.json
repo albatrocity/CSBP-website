@@ -1,0 +1,35 @@
+{
+  "name": "crossroads-flock-party",
+  "version": "1.0.0",
+  "description": "Crossroads Flock Party website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node-dev server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cremalab/CSBP-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cremalab/CSBP-website/issues"
+  },
+  "homepage": "https://github.com/cremalab/CSBP-website#readme",
+  "dependencies": {
+    "good": "^7.0.0",
+    "good-console": "^6.1.1",
+    "good-file": "^6.0.1",
+    "good-http": "^6.0.1",
+    "good-squeeze": "^3.0.1",
+    "hapi": "^13.3.0",
+    "hapi-stylus": "^2.1.0",
+    "inert": "^3.2.0",
+    "jade": "^1.11.0",
+    "moment": "^2.13.0",
+    "stylus": "^0.54.5",
+    "vision": "^4.1.0"
+  }
+}

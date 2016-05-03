@@ -16,3 +16,4 @@ rerun.txt
 .DS_Store
 pickle-email-*.html
 /build/*
+/node_modules
