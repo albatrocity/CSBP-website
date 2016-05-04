@@ -17,9 +17,6 @@ module.exports = {
     }, {
       module: 'good-squeeze',
       name: 'SafeJson'
-    }, {
-      module: 'good-file',
-      args: ['./test/fixtures/awesome_log']
     }],
     http: [{
       module: 'good-squeeze',
