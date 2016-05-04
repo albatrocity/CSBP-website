@@ -1,0 +1,31 @@
+ul#schedule-list
+  margin: 0
+  padding: 0
+  list-style: none
+
+.band
+  margin-bottom: 2rem
+  .name-time
+    a.name
+      font-family: 'League Gothic'
+      font-weight: normal
+      font-size: 2rem
+      line-height: 2rem
+      color: color-red
+      transition: all 0.4s
+      &:hover
+        color: color-pink
+    .time
+      font-family: 'Alfa Slab One'
+      float: right
+      font-size: 1rem
+      padding-top: .5rem
+      color: color-gold
+      letter-spacing: 0.1rem
+
+@media (max-width: 600px) {
+  .band .name-time a.name {
+    font-size: 1.5rem
+    line-height: 1.5rem
+  }
+}

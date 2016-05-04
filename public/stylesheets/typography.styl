@@ -1,5 +1,6 @@
 @require "colors"
 @import "../fonts/league-gothic"
+@import "../fonts/social"
 
 font-family  = 'Alfa Slab One'
 font-size    = 24
@@ -7,15 +8,15 @@ baseline     = 1rem
 font-color   = #333
 header-color = #333
 
-nav-link=#1366A6
-nav-hover= #1A8CE5
+nav-link = #1366A6
+nav-hover = color-pink
 
 html {
   font-family:	font-family;
   line-height:  font-size;
   margin-bottom:  font-size;
 
-	font-size: 		font-size;
+	font-size: 		24px;
 	line-height:	baseline;
 	margin-bottom:	baseline;
 }
@@ -23,15 +24,35 @@ html {
 body {
   font-size:    24px;
   font-family: 'Slabo 27px', serif;
-
-  line-height:  1.4rem;
 	color:   font-color;
-	// background: url("img/baseline-grid.png") 0 24px; /* === BASELINE GRID GUIDE === */
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 18px !important
+  }
+  p {
+    line-height:  1.1rem;
+  }
+  h1 {
+    font-size:    4rem;
+    line-height:  3.5rem;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   color: color-black;
+}
+
+p {
+  line-height:  1.4rem;
+}
+
+p.social {
+  font-size: 1.5rem
+  a {
+    color: color-pink
+  }
 }
 
 h1 {
@@ -47,12 +68,17 @@ h1 {
   font-size:    4rem;
   line-height:  4.5rem;
   color: color-black
+  margin: .5rem 0
 }
 
 #main_header h2 span.red.fat-slab {
   font-size: 1.2rem;
   letter-spacing: -0.1rem;
   vertical-align: middle;
+}
+
+#main_header #logo h4 {
+  margin: 0 0 2rem 0
 }
 
 #about {

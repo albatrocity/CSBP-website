@@ -1,3 +1,4 @@
+doctype html
 html
   head
     meta(charset="utf-8")
@@ -14,14 +15,16 @@ html
     link(rel="stylesheet" media="screen" href="/css/site.css")
     link(href='https://fonts.googleapis.com/css?family=Alfa+Slab+One|Slabo+27px' rel='stylesheet' type='text/css')
     script(src="/js/modernizr.custom.js" type="text/javascript")
-    script(charset="utf-8" src="/js/css3-mediaqueries.js" type="text/javascript")
+    //- script(charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js" type="text/javascript")
     block head
   body
     header#main_header
       div#logo
+        svg#animation
         h1 
           | June 3
           span.red.fat-slab  Free
+        h4 Music, food, drinks, and fun from 5-11pm
         img(src="/img/flock_party_logo.svg" alt="Crossroads Flock Party 2016")
         h2 
           | W 19
@@ -29,7 +32,12 @@ html
           span.red.fat-slab  &amp; 
           |  Wyandotte
         h3 Kansas City, MO
+        p.social
+          a(href='http://twitter.com/KCBlockParty' class='symbol' title='circletwitterbird')
+          a(href='https://www.facebook.com/KCblockparty/?fref=ts' class='symbol' title='circlefacebook')
     section#main_content
       block content
       section#footer
         include ./_sponsors.jade
+
+    script(src="/js/animation.js" type="text/javascript")

@@ -1,6 +1,8 @@
 @import "typography"
-@import "sponsors"
 @require "colors"
+@import "schedule"
+@import "animation"
+@import "sponsors"
 
 
 color-1 = #EE3F35
@@ -45,19 +47,24 @@ header#main_header
   width: 60%;
   max-width: 500px;
   margin: 0 auto;
+  background url('/img/flock_party_bg_static.svg') no-repeat
+  background-position: -40px 50%
 
 #logo img
   display: block
   vertical-align: middle
   margin: 0 auto
   text-align: center
+  max-height: 450px
 
 
 #main_content > section
   max-width: 700px
   margin: 1rem auto
+  padding: 1rem
 
 @media (max-width: 600px)
+
   .col
     display: block
 
@@ -73,34 +80,6 @@ header#main_header
   .big-mingo
     width: 60%
     margin-top: -25%
-
-
-
-
-ul#schedule-list
-  margin: 0
-  padding: 0
-  list-style: none
-
-
-
-
-.divider
-  background: url('../img/ill/divider.svg')
-  background-size: 200%
-  background-position: center
-  background-repeat: no-repeat
-  height: 6%
-  width: 100%
-  position: absolute
-  margin-top: -7%
-  z-index: 15
-  &.alt
-    height: 7%
-    background-image: url('../img/ill/divider2.svg')
-    margin-top: -2%
-
-
 
 #sponsors
   .large, .small, .text
@@ -140,84 +119,3 @@ ul#schedule-list
 
   .text .sponsor
     padding: 0 .4em
-
-
-
-/*#sponsors .col
-  @include inline-block
-  max-width: 10%
-  a
-    display: block
-
-*/
-
-.social
-  list-style: none
-
-
-
-@media (max-width: 600px)
-  .mega
-    font-size: 220%
-
-  #sponsors .col
-    display: table-cell
-
-
-  #grill_main
-    right: 10%
-
-  .free-img
-    top: 15%
-
-  .when, .where
-    h2
-      font-size: 120%
-
-
-  #info-right
-    p
-      font-size: 80%
-
-footer
-  background: color-green url("/img/bg_crisscross.png") repeat
-  position: relative
-  padding-bottom: 4em
-
-  #grill_main
-    max-width: 20%
-    position: absolute
-    margin-top: -15%
-    right: 4%
-
-
-  .details
-    padding: 50px 0
-    margin-bottom: 0
-    list-style: none
-    color: color-6
-    white-space: nowrap
-    overflow: hidden
-
-    li
-      margin-right: 40px
-      white-space: nowrap
-      float: left
-      background-size: contain
-      &:last-child
-        margin 0
-
-
-    h3
-      margin: 6px 0 0
-      line-height: 16px
-      text-transform: uppercase
-    .bottom
-      font-family: 'OpenSansCondensedBold'
-
-
-
-
-a.button
-  background: color-ltblue
-  padding: .6em 1em

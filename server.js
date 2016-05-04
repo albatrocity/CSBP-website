@@ -4,6 +4,8 @@ const Hapi        = require('hapi');
 const Path        = require('path');
 const goodOptions = require('./log_options')
 const moment      = require('moment')
+const schedule    = require('./schedule.js')
+const time_slots  = require('./time_slots.js')
 
 const server = new Hapi.Server({
   connections: {
@@ -47,7 +49,11 @@ server.register([
     method: 'GET',
     path: '/',
     handler: function (request, reply) {
-      reply.view('index', {year: moment().format('YYYY')});
+      reply.view('index', {
+        year: moment().format('YYYY'),
+        schedule: schedule,
+        time_slots: time_slots
+      });
     }
   });
   server.route({
