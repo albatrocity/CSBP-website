@@ -33,7 +33,7 @@ module.exports = {
       url: "https://theeconquerors.bandcamp.com/"
     },
     {
-      name: "Duncan Burnett",
+      name: "Duncan Burnett & The Outer Circle",
       description: "yes",
       url: "http://duncanburnett.com"
     },
