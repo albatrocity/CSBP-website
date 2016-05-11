@@ -25,7 +25,7 @@ module.exports = {
     {
       name: "See Through Dresses",
       description: "yes",
-      url: "https://seethroughdresses.bandcamp.com/"
+      url: "http://seethroughdressesband.com"
     },
     {
       name: "The Conquerors",
@@ -35,12 +35,12 @@ module.exports = {
     {
       name: "Duncan Burnett",
       description: "yes",
-      url: "http://duncanburnett.com/"
+      url: "http://duncanburnett.com"
     },
     {
       name: "Be/Non",
       description: "yes",
-      url: "http://haymakerrecords.bandcamp.com/album/mystic-sunrise-sunset-magic"
+      url: "https://be-non.bandcamp.com"
     }
   ]
 }
