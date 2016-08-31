@@ -2,4 +2,8 @@ extends ./page_layout.jade
 
 block content
   section
+    if page.gallery.length
+      #page_gallery
+        for image in page.gallery.images
+          img(src=image.limit(800, 600) data-src-2x="image.limit(800,600)" alt="Comedy of Desires")
     !{page.content.html}

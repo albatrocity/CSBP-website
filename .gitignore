@@ -20,3 +20,4 @@ pickle-email-*.html
 /test/fixtures
 public/compiled/js/*.js
 public/compiled/stylesheets/*.css
+.env
