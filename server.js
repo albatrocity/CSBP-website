@@ -1,96 +1,66 @@
 'use strict'
 
-const Hapi        = require('hapi');
-const Path        = require('path');
-const goodOptions = require('./log_options')
-const moment      = require('moment')
-const schedule    = require('./schedule.js')
-const time_slots  = require('./time_slots.js')
+// Simulate config options from your production environment by
+// customising the .env file in your project's root folder.
+if (process.env.NODE_ENV != 'production') {
+  require('dotenv').config()
+}
 
-const server = new Hapi.Server({
-  connections: {
-    routes: {
-      files: {
-        relativeTo: Path.join(__dirname, 'public')
-      }
-    }
-  }
-});
-server.connection({ host: '0.0.0.0', port: process.env.PORT || 8080 })
+const keystone   = require('keystone')
 
-server.register([
-  require('inert'),
-  require('vision'),
-  {
-    register: require('good'),
-    options: goodOptions
-  },
-  {
-    register: require('hapi-stylus'),
-    options: {
-      home: __dirname + "/public/stylesheets",
-      route: "/css/{filename*}" // default
-    }
-  }
-], (err) => {
-  if (err) {
-    throw err;
-  }
+// For Mongoose 4 (Promises)
+keystone.mongoose.Promise = global.Promise
 
-  server.views({
-    engines: {jade: require('jade')},
-    path: 'views',
-    compileOptions: {
-      pretty: true
-    }
-  });
+// Initialise Keystone with your project's configuration.
+// See http://keystonejs.com/guide/config for available options
+// and documentation.
 
-  server.route({
-    method: 'GET',
-    path: '/',
-    handler: function (request, reply) {
-      reply.view('index', {
-        year: moment().format('YYYY'),
-        schedule: schedule,
-        time_slots: time_slots
-      });
-    }
-  });
-  server.route({
-    method: 'GET',
-    path: '/js/{param*}',
-    handler: {
-      directory: {
-        path: 'js'
-      }
-    }
-  });
-  server.route({
-    method: 'GET',
-    path: '/img/{param*}',
-    handler: {
-      directory: {
-        path: 'img'
-      }
-    }
-  });
-  server.route({
-    method: 'GET',
-    path: '/fonts/{param*}',
-    handler: {
-      directory: {
-        path: 'fonts'
-      }
-    }
-  });
-});
+keystone.init({
+  'name': 'Crossroads Flock Party',
+  'brand': 'Crossroads Flock Party',
+  'stylus': 'public',
+  'static': 'public',
+  'views': 'views',
+  'view engine': 'jade',
+  'session': true,
+  'auth': true,
+  'auto update': true,
+  'user model': 'User',
+  'mongo': process.env.MONGODB_URI || 'mongodb://localhost/crossroads-flock-party'
+})
 
+keystone.set('s3 config', {
+  bucket: process.env.S3_BUCKET,
+  key: process.env.AWS_KEY,
+  secret: process.env.AWS_SECRET
+})
+keystone.set('cloudinary config', {
+  cloud_name: process.env.CLOUDINARY_NAME,
+  api_key: process.env.CLOUDINARY_KEY,
+  api_secret: process.env.CLOUDINARY_SECRET
+})
 
-server.start((err) => {
+// Load your project's Models
+keystone.import('models')
 
-    if (err) {
-        throw err;
-    }
-    console.log('Server running at:', server.info.uri);
+// Setup common locals for your templates. The following are required for the
+// bundled templates and layouts. Any runtime locals (that should be set uniquely
+// for each request) should be added to ./routes/middleware.js
+keystone.set('locals', {
+  env: keystone.get('env'),
+  utils: keystone.utils,
+  editable: keystone.content.editable
+})
 
-});
+// Load your project's Routes
+keystone.set('routes', require('./routes'))
+
+// Configure the navigation bar in Keystone's Admin UI
+keystone.set('nav', {
+  users: 'users',
+  pages: 'pages'
+})
+
+// Start Keystone to connect to your database and initialise the web server
+
+keystone.start()

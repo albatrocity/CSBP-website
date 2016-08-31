@@ -18,3 +18,5 @@ pickle-email-*.html
 /build/*
 /node_modules
 /test/fixtures
+public/compiled/js/*.js
+public/compiled/stylesheets/*.css

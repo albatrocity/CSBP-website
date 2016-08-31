@@ -6,7 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev": "node-dev server.js"
+    "lint": "eslint .",
+    "dev": "concurrently --kill-others 'npm run watch-dev' 'npm run watch-css' 'npm run watch-js'",
+    "watch-dev": "nodemon server.js --ignore /public/**/*.js",
+    "compile-css": "stylus public/styles -o public/compiled/styles",
+    "watch-css": "stylus public/stylesheets -o public/compiled/stylesheets -w",
+    "compile-js": "browserify public/js/*.js -o public/compiled/js/bundle.js -t [ babelify --presets [ es2015 react ] ]",
+    "watch-js": "watchify public/js/*.js -o public/compiled/js/bundle.js  -t [ babelify --presets [ es2015 react ] ]",
+    "compile-all": "npm run compile-js; npm run compile-css",
+    "heroku-postbuild": "npm run compile-all"
   },
   "repository": {
     "type": "git",
@@ -18,18 +26,19 @@
     "url": "https://github.com/cremalab/CSBP-website/issues"
   },
   "homepage": "https://github.com/cremalab/CSBP-website#readme",
+  "devDependencies": {
+    "concurrently": "^2.2.0",
+    "eslint": "^2.12.0",
+    "eslint-config-keystone": "^2.3.1"
+  },
   "dependencies": {
-    "good": "^7.0.0",
-    "good-console": "^6.1.1",
-    "good-file": "^6.0.1",
-    "good-http": "^6.0.1",
-    "good-squeeze": "^3.0.1",
-    "hapi": "^13.3.0",
-    "hapi-stylus": "^2.1.0",
-    "inert": "^3.2.0",
-    "jade": "^1.11.0",
-    "moment": "^2.13.0",
-    "stylus": "^0.54.5",
-    "vision": "^4.1.0"
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "consolidate": "^0.14.1",
+    "dotenv": "^2.0.0",
+    "keystone": "^4.0.0-beta.1",
+    "moment": "^2.14.1",
+    "stylus": "^0.53.0",
+    "watchify": "^3.7.0"
   }
 }
