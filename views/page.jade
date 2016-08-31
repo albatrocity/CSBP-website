@@ -4,6 +4,7 @@ block content
   section
     if page.gallery.length
       #page_gallery
-        for image in page.gallery.images
-          img(src=image.limit(800, 600) data-src-2x="image.limit(800,600)" alt="Comedy of Desires")
+        each image in page.gallery
+          a(href=image.url target="_blank")
+            img(src=image.limit(1000,1000) data-src-2x="image.limit(2000,2000)")
     !{page.content.html}
