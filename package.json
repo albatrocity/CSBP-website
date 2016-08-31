@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "dev": "concurrently --kill-others 'npm run watch-dev' 'npm run watch-css' 'npm run watch-js'",
     "watch-dev": "nodemon server.js --ignore /public/**/*.js",
-    "compile-css": "stylus public/styles -o public/compiled/styles",
+    "compile-css": "stylus public/stylesheets -o public/compiled/stylesheets",
     "watch-css": "stylus public/stylesheets -o public/compiled/stylesheets -w",
     "compile-js": "browserify public/js/*.js -o public/compiled/js/bundle.js -t [ babelify --presets [ es2015 react ] ]",
     "watch-js": "watchify public/js/*.js -o public/compiled/js/bundle.js  -t [ babelify --presets [ es2015 react ] ]",
