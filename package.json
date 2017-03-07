@@ -37,6 +37,7 @@
     "consolidate": "^0.14.1",
     "dotenv": "^2.0.0",
     "ideal-image-slider": "^1.5.1",
+    "jade": "^1.11.0",
     "keystone": "^4.0.0-beta.1",
     "moment": "^2.14.1",
     "stylus": "^0.53.0",
