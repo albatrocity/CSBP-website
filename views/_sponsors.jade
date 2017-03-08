@@ -1,40 +1,10 @@
 section#sponsors.sponsors
   h1 Sponsors
   .large
-    .sponsor.superwide
-      a(href="http://www.mobank.com")
-        img.svg(src='/img/sponsors/mo_bank.svg', alt: "Missouri Bank")
-    .sponsor.superwide
-      a(href="http://inkkc.com")
-        img(src='/img/sponsors/ink.png', alt: "ink Magazine")
-    .sponsor
-      a(href="http://www.mildredscoffeehouse.com")
-        img.svg(src='/img/sponsors/mildreds.svg', alt: "Mildred's")
-    .sponsor.wide
-      a(href="http://fireenginedesign.com")
-        img.svg(src='/img/sponsors/fire_engine.svg', alt: "Fire Engine Design")
-    .sponsor
-      a(href="http://boverirealty.com")
-        img.svg(src='/img/sponsors/boveri.svg', alt: "Boveri Realty")
-    .sponsor
-      a(href="https://rntbevcorp.com")
-        img(src='/img/sponsors/col_jesses.png', alt: "Colonel Jesse's Small Batch Tonic")
-    .sponsor
-      a(href="http://www.snowandcompany.com/")
-        img.svg(src='/img/sponsors/snow_co.svg', alt: "Snow & Company")
-    .sponsor
-      a(href="http://www.departmentzero.com")
-        img.svg(src='/img/sponsors/deptzero.svg', alt: "Dept Zero")
+    each sponsor in sponsors.logo
+      div(class="sponsor #{sponsor.logoSizing}")
+        a(href="#{sponsor.website}")
+          img.svg(src=sponsor.logo.url alt="#{sponsor.name}")
   p.text
-    a.sponsor(href="http://www.crema.us") Crema
-    a.sponsor(href="http://www.ej4.com") ej4
-    a.sponsor(href="http://www.bnim.com") BNIM
-    a.sponsor(href="http://www.quixoticfusion.com") Quixotic
-    a.sponsor(href="http://escapistskateboarding.com") Escapist Skateboarding
-    a.sponsor(href="http://www.crossroadsplantexchange.com") Crossroads Plant Exchange
-    a.sponsor(href="http://www.therobertsonlawgroup.com") Robertson Law Group
-    a.sponsor(href="http://www.austinwalshstudio.com") Austin Walsh Studio
-    a.sponsor(href='http://www.artlithocraft.com') ALC Group
-    a.sponsor(href='http://www.mpresskc.com') Mpress
-    a.sponsor(href='http://www.elementrecordingstudios.com') Element Recording
-    a.sponsor(href='http://www.feastmagazine.com/the-feed/kansas_city_news/article_9c215f70-0aee-11e6-a411-c73d4d63ee18.html') Swordfish Tom’s
+    each sponsor,index in sponsors.text
+      a.sponsor(href="#{sponsor.website}")= sponsor.name

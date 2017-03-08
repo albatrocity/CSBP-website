@@ -23,6 +23,7 @@ keystone.init({
   'views': 'views',
   'view engine': 'jade',
   'session': true,
+  'session store': 'mongo',
   'auth': true,
   'auto update': true,
   'user model': 'User',
