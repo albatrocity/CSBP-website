@@ -3,44 +3,44 @@ module.exports = {
   end: "23",
   bands: [
     {
-      name: "Paddlefish",
+      name: "Arc Flash",
       description: "yes",
-      url: "https://paddlefish.bandcamp.com/"
+      url: "https://arcflash.bandcamp.com"
     },
     {
-      name: "Weaver x ConductorWilliams",
+      name: "Claire Adams",
       description: "yes",
-      url: "https://soundcloud.com/weavepancho"
+      url: "https://claireandthecrowdedstage.bandcamp.com"
     },
     {
-      name: "Toughies",
+      name: "HighWesthus",
       description: "yes",
-      url: "https://toughies.bandcamp.com/"
+      url: "http://www.highwesthus.com"
     },
     {
-      name: "Warm Bodies",
+      name: "The Whiffs",
       description: "yes",
-      url: "https://warmbodies100.bandcamp.com/releases"
+      url: "http://thewhiffs.bandcamp.com"
     },
     {
-      name: "See Through Dresses",
+      name: "Dreamgirl",
       description: "yes",
-      url: "http://seethroughdressesband.com"
+      url: "https://dreamgirlmusic.bandcamp.com"
     },
     {
-      name: "The Conquerors",
+      name: "Natural Man and the Supreme Court",
       description: "yes",
-      url: "https://theeconquerors.bandcamp.com/"
+      url: ""
     },
     {
-      name: "Duncan Burnett & The Outer Circle",
+      name: "Reptil",
       description: "yes",
-      url: "http://duncanburnett.com"
+      url: "https://elreptil.com"
     },
     {
-      name: "Be/Non",
+      name: "Blk Flanl",
       description: "yes",
-      url: "https://be-non.bandcamp.com"
+      url: "https://soundcloud.com/blkflanl"
     }
   ]
 }

@@ -1,8 +1,6 @@
 @require "colors"
-@import "../fonts/league-gothic"
 @import "../fonts/social"
 
-font-family  = 'Alfa Slab One'
 font-size    = 18
 baseline     = 1rem
 font-color   = #333
@@ -23,7 +21,7 @@ html {
 
 body {
   font-size:    20px;
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Open Sans', sans-serif;
 	color:   font-color;
 }
 @media (max-width: 600px) {
@@ -41,7 +39,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  color: color-black;
+  color: color-red;
 }
 
 p {
@@ -49,18 +47,21 @@ p {
 }
 
 p.social {
+  margin: 0
   font-size: 1.5rem
   a {
-    color: color-pink
+    color: color-purple
+  }
+  &.small {
+    margin-top: 1em;
   }
 }
 
 h1 {
-  font-family: 'League Gothic'
+  font-family: 'Asap'
   font-size:    3rem;
   line-height:  3.5rem;
   margin:       1rem 0;
-  text-transform: uppercase;
   color: color-red
 }
 @media (max-width: 600px) {
@@ -78,7 +79,7 @@ h4 {
 #main_header h1 {
   font-size:    4rem;
   line-height:  4.5rem;
-  color: color-black
+  color: color-red
   margin: .5rem 0
 }
 
@@ -97,10 +98,10 @@ h4 {
 }
 
 h2 {
-  font-family: 'League Gothic'
+  font-family: 'Asap'
   font-size:    2rem;
   line-height:  2.5rem;
-	color: color-gold
+	color: color-purple
   text-transform: uppercase;
   margin: 2rem 0 0 0
 }
@@ -111,20 +112,20 @@ sup {
 }
 
 h3 {
-  font-family: 'League Gothic'
+  font-family: 'Asap'
 	font-size:    1rem;
   text-transform: uppercase;
   margin: 0 .5rem
 }
 
 h4 {
-  font-family: 'League Gothic'
+  font-family: 'Asap'
 	font-size:    1.5rem;
   line-height: 1.6rem;
 }
 
 h5 {
-  font-family: 'League Gothic'
+  font-family: 'Asap'
 	font-size:    0.66*font-size;
   margin:       2.00*font-size 0 1.00*font-size;
 
@@ -133,7 +134,7 @@ h5 {
 }
 
 h6 {
-  font-family: 'League Gothic'
+  font-family: 'Asap'
 	font-size:    0.50*font-size;
   margin:       2.05*font-size 0 0.96*font-size;
 
@@ -185,7 +186,7 @@ a {
     color: nav-link;
   }
   &:hover, &:active {
-    color: nav-hover;
+    color: color-purple;
   }
 }
 strong, em {
@@ -194,8 +195,4 @@ strong, em {
 em {
   font-style: italic;
   font-weight: normal;
-}
-
-.fat-slab {
-  font-family: 'Alfa Slab One', sans-serif;
 }

@@ -4,19 +4,6 @@
 @import "animation"
 @import "sponsors"
 
-
-color-1 = #EE3F35
-color-2 = #A52C25
-color-3 = #0FBB93
-color-4 = #0F8FBB
-color-5 = #333333
-color-6 = #064B3B
-
-color-ltblue = #a4e0f6
-color-green = #C6E6C7
-color-dk = #026431
-color-pink = #FF81E1
-
 html
   height: 100%
 
@@ -24,7 +11,7 @@ body
   height: 100%
   margin: 0
   padding: 0
-  background: color-tan
+  background: color-pink
 
 .free-img
   position: relative
@@ -45,6 +32,8 @@ header#main_header
     #logo
       display: inline-block;
       background: none
+      width: 60%;
+      max-width: 660px;
       img
         width: 40%
         padding: 1em
@@ -55,9 +44,11 @@ header#main_header
         display: inline-block
         width: 40%
         h4
-          margin-bottom: 0.4em
+          margin-bottom: 0.1em
         h2
           margin: 0
+          line-height: 1em
+          margin-bottom: 0.2em
 
 
 #logo
@@ -67,8 +58,8 @@ header#main_header
   width: 60%;
   max-width: 500px;
   margin: 0 auto;
-  background url('/img/flock_party_bg_static.svg') no-repeat
-  background-position: -40px 50%
+  background url('/img/illustrations/background_elements-pink.svg') no-repeat;
+  background-position: center center;
 
 #logo img
   display: block
@@ -76,6 +67,7 @@ header#main_header
   margin: 0 auto
   text-align: center
   max-height: 450px
+  margin-top -10%;
 
 
 #main_content > section
@@ -84,7 +76,7 @@ header#main_header
   padding: .5rem 1.5rem
 
   h1
-    color color-red
+    color color-1
     margin-left: -1rem
     margin-bottom: 1rem;
     -ms-transform: rotate(-5deg); /* IE 9 */
@@ -97,7 +89,7 @@ header#main_header
     }
   }
 
-@media (max-width: 600px)
+@media (max-width: 660px)
   #logo
     background: none
 
@@ -106,7 +98,7 @@ header#main_header
 #sponsors
   .large, .small, .text
     text-align: center
-    border-bottom: 1px solid #eee
+    border-bottom: 1px solid color-red
     padding: 2em 0
 
   .texttext-align: center
@@ -149,3 +141,6 @@ header#main_header
     display: inline-block
     padding: 1rem 1rem 0 0
     list-style: none
+
+.hidden
+  display: none
