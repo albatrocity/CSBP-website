@@ -6,5 +6,5 @@ block content
       #page_gallery
         each image in page.gallery
           a(href=image.url target="_blank")
-            img(src=image.limit(1000,1000) data-src-2x="image.limit(2000,2000)")
+            img(src=image.limit(1000,1000) data-src-2x="#{image.limit(2000,2000)}")
     !{page.content.html}
