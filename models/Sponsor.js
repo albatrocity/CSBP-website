@@ -14,7 +14,7 @@ Sponsor.add({
   },
   logoSizing: {
     type: Types.Select,
-    options: ['regular', 'wide', 'superwide'],
+    options: ['narrow', 'regular', 'wide', 'superwide'],
     default: 'regular'
   },
   tier: {
