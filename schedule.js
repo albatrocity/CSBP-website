@@ -38,7 +38,7 @@ module.exports = {
       url: "https://elreptil.com"
     },
     {
-      name: "Blk Flanl",
+      name: "BLKFLANL",
       description: "yes",
       url: "https://soundcloud.com/blkflanl"
     }
