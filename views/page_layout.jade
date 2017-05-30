@@ -9,6 +9,7 @@ html
     meta(property="og:description" content="Enjoy an evening of live music, food, and festivities on June 2nd to celebrate the Crossroads of Kansas City. We’re kicking things off at 5PM on 19th street in the Crossroads Arts District (between Wyandotte and Baltimore).")
     meta(content="Enjoy an evening of live music, food, and festivities on June 2nd to celebrate the Crossroads of Kansas City. We’re kicking things off at 5PM on 19th street in the Crossroads Arts District (between Wyandotte and Baltimore).", name="description")
     meta(content="width = 320, initial-scale = 1, user-scalable = yes" name="viewport")
+    include ./_tag_manager_head.html
     
     meta(content="IE=edge,chrome=1" http-equiv="X-UA-Compatible")
     title Crossroads Flock Party #{year} | #{page.name}
@@ -20,6 +21,7 @@ html
     //- script(charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js" type="text/javascript")
     block head
   body
+    include ./_tag_manager_body.html
     header#main_header.compact
       div#logo
         a.image-link(href="/")
